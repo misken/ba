@@ -1,0 +1,4 @@
+_build/
+sbm1.rst
+*.bak
+publish.bat
