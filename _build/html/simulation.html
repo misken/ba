@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Simulation modeling &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Intro to statistical predictive modeling - go beyond this class (OPTIONAL)" href="data_science.html" />
+    <link rel="prev" title="Intro to modeling uncertainty" href="uncertainty.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="data_science.html" title="Intro to statistical predictive modeling - go beyond this class (OPTIONAL)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="uncertainty.html" title="Intro to modeling uncertainty"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="adv_modeling.html" accesskey="U">Advanced modeling techniques</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Simulation modeling</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="simulation-modeling">
+<h1>Simulation modeling<a class="headerlink" href="#simulation-modeling" title="Link to this heading">¶</a></h1>
+<p>Monte-Carlo simulation is a powerful way of modeling uncertainty in spreadsheet models. Excel add-ins such as &#64;Risk make it pretty easy to build and analyze spreadsheet simulation models. Of course, we need to make sure we understand how to apply probability and statistics to the construction, running and analysis of these models.</p>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Link to this heading">¶</a></h2>
+<blockquote>
+<div><p>After this Module you should:</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Be able to construct basic spreadsheet simulation models,</p></li>
+<li><p>Understand and be able to use probability and statistics to both build simulation models and properly analyze the results,</p></li>
+<li><p>Understand the “Flaw of Averages” and its implications for building spreadsheet models,</p></li>
+<li><p>Be able to use &#64;Risk and other specialized Excel add-ins to build and analyze simulation models.</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Business Analytics - Chapter 15: Introduction to Simulation Modeling</p></li>
+<li><p>Business Analytics - Chapter 16: Simulation Models</p></li>
+</ul>
+<p>Chapter 15 does a nice job of introducing numerous aspects of spreadsheet simulation including modeling building, understanding the Flaw of Averages, input modeling, output analysis and using Excel and &#64;Risk to do simulation modeling. Chapter 16 has lots of examples.</p>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1LkqAwP6ipODsHQrd8wv_CUuhmglfgtJB/view?usp=sharing">Downloads_Simulation.zip</a></p></li>
+</ul>
+</section>
+<section id="screencasts-and-other-activities">
+<h2>Screencasts and other activities<a class="headerlink" href="#screencasts-and-other-activities" title="Link to this heading">¶</a></h2>
+<section id="intro-to-simulation-with-excel">
+<h3>Intro to Simulation with Excel<a class="headerlink" href="#intro-to-simulation-with-excel" title="Link to this heading">¶</a></h3>
+<p>In Example 15.1 - Ordering Calendars at Walton Bookstore. Before getting to use &#64;Risk, we’ll learn to build simulation models with Excel only. This will help us understand (and really appreciate) what add-ins like &#64;Risk are doing.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/2nDTwZ1bYPI">SCREENCAST: Building an Excel Based Simulation Model</a> (38:37)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/q62I_AVRMn8">SCREENCAST: Using Data Tables for Excel Based Simulation</a> (12:50)</p></li>
+</ul>
+</section>
+<section id="intro-to-simulation-with-excel-and-risk">
+<h3>Intro to Simulation with Excel and &#64;Risk<a class="headerlink" href="#intro-to-simulation-with-excel-and-risk" title="Link to this heading">¶</a></h3>
+<p>Now, let’s revisit the Walton Bookstore problem using &#64;Risk.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/qoE7ofmIbSQ">SCREENCAST:Using &#64;Risk for Spreadsheet Simulation</a> (16:50)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/sZJ9WKVEHjU">SCREENCAST:Understanding and Using &#64;Risk Outputs</a> (11:53)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/gLxvqzX35lI">SCREENCAST: Using RiskSimTable to Analyze Multiple Scenarios</a> (8:45)</p></li>
+</ul>
+<p>How do you go about figuring out what input distributions to use?</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/Q_eNicNLq7A">SCREENCAST: Distribution fitting with &#64;Risk</a> (35:46)</p></li>
+</ul>
+<p>Hey, is there some way that we can combine the “what if?” power of simulation with the “what’s best?” power of Solver? Yep, check out RiskOptimizer.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/QBEI8u5MEnk">SCREENCAST: Using RiskOptimizer to Optimize and Simulate</a> (13:44)</p></li>
+</ul>
+<p>What if my random input variables are correlated? (OPTIONAL)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/hatjoiKDMyY">SCREENCAST: Modeling correlated inputs - a stock example</a> (12:42)</p></li>
+</ul>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<section id="digital-elevation-map-of-the-grand-canyon-using-excel">
+<h3>Digital elevation map of the Grand Canyon using Excel<a class="headerlink" href="#digital-elevation-map-of-the-grand-canyon-using-excel" title="Link to this heading">¶</a></h3>
+<p>In this class we explore all kinds of strange uses of Excel. For example, I’ve built some agent based simulation models with a free package called NetLogo (<a class="reference external" href="http://ccl.northwestern.edu/netlogo/">http://ccl.northwestern.edu/netlogo/</a>). It involves simulations that play out on a grid (yes, much like a spreadsheet). I was goofing around with a model of rainfall in the Grand Canyon and wanted to see what would happen if I imported digital elevation data into Excel and used Conditional Formatting to try to create a digital elevation map. It works, but the aspect ratio is messed up unless you get the cells to be perfect squares. That led me to this cool link: <a class="reference external" href="http://www.mrexcel.com/tip071.shtml">http://www.mrexcel.com/tip071.shtml</a>. Finally, I got it to work and made a digital elevation model (DEM) of a little piece of the Grand Canyon in Excel.</p>
+<img alt="_images/LittlePieceOfGrandCanyonInExcel.png" src="_images/LittlePieceOfGrandCanyonInExcel.png" />
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Simulation modeling</a><ul>
+<li><a class="reference internal" href="#objectives">Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#screencasts-and-other-activities">Screencasts and other activities</a><ul>
+<li><a class="reference internal" href="#intro-to-simulation-with-excel">Intro to Simulation with Excel</a></li>
+<li><a class="reference internal" href="#intro-to-simulation-with-excel-and-risk">Intro to Simulation with Excel and &#64;Risk</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#digital-elevation-map-of-the-grand-canyon-using-excel">Digital elevation map of the Grand Canyon using Excel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="uncertainty.html"
+                          title="previous chapter">Intro to modeling uncertainty</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="data_science.html"
+                          title="next chapter">Intro to statistical predictive modeling - go beyond this class (OPTIONAL)</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/simulation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="data_science.html" title="Intro to statistical predictive modeling - go beyond this class (OPTIONAL)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="uncertainty.html" title="Intro to modeling uncertainty"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="adv_modeling.html" >Advanced modeling techniques</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Simulation modeling</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

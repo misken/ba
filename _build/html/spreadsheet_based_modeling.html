@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Spreadsheet based modeling &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Simple mathematical models" href="simple_math_models.html" />
+    <link rel="prev" title="Intro to Business Analytics course" href="kickoff.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="simple_math_models.html" title="Simple mathematical models"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="kickoff.html" title="Intro to Business Analytics course"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" accesskey="U">Foundation for spreadsheet analytics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Spreadsheet based modeling</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="spreadsheet-based-modeling">
+<h1>Spreadsheet based modeling<a class="headerlink" href="#spreadsheet-based-modeling" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>We will spend the first few weeks of the semester building a basic foundation of spreadsheet modeling/engineering skills before diving into more advanced modeling and spreadsheet application development topics. We will start by focusing on:</p>
+<ul class="simple">
+<li><p>Basic modeling principles</p></li>
+<li><p>Basic spreadsheet modeling and spreadsheet engineering principles</p></li>
+<li><p>Continued development of Excel skills to facilitate modeling</p></li>
+</ul>
+<p>After completion of this module:</p>
+<ul class="simple">
+<li><p>You will have a better appreciation for the wide variety and pervasive use of models and modeling in business.</p></li>
+<li><p>You should be able to use basic model building principles such as simplification, decomposition, input/output identification, prototyping, parameterization,
+quieting the critic, working backwards, and focusing on structure instead of data.</p></li>
+<li><p>You should start to understand the different things we do with models such as sensitivity analysis and/or simulation (what if?), optimization (what’s best?),
+exploration, visualization and communication.</p></li>
+<li><p>Understand and be able to use Excel concepts and techniques such as absolute and relative cell addressing, R1C1 notation, range names, Data Tables, Goal
+Seek, date/time values and functions, VLOOKUP(), SUMPRODUCT() and other advanced Excel functions.</p></li>
+<li><p>Understand and be able to use spreadsheet design and engineering principles such as logical layout, avoiding hard coding, isolating input parameters,
+designing for use and maintainability, finding and avoiding errors, simplification through formula decomposition and range naming, documentation, use of dynamic visual cues, formula auditing and other testing techniques.</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<p>The readings for this module are intended to provide an introduction to basic modeling principles, get you used to the style of our textbook (which mixes conceptual material with hands on Excel implementation details), and increase your awareness of spreadsheet design and construction principles that will help you create better spreadsheet models. We will use these ideas throughout the semester.</p>
+<ul class="simple">
+<li><p>If you have the 7th edition of our BA:DADM textbook, it now includes the intro to spreadsheet modeling material in Chapter 1 (thank you W&amp;A for putting this material into your BA:DADM textbook). If not, you can use the Practical Management Science - Chapter 2: Intro to Spreadsheet Modeling pdf that we used for the Prep Problem.</p></li>
+<li><p>Errors are rampant in business spreadsheet models. Check out a few of the horror stories at: <a class="reference external" href="https://eusprig.org/research-info/horror-stories/">https://eusprig.org/research-info/horror-stories/</a></p></li>
+<li><p>Then to help you avoid similar mistakes, read:  <a class="reference external" href="http://arxiv.org/ftp/arxiv/papers/1301/1301.5878.pdf">How do you know your spreadsheet is right?</a></p></li>
+</ul>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1nOY3myKTy1AhMoHE8JZl5-OcS-2V61is/view?usp=sharing">Downloads_SBM.zip</a></p></li>
+</ul>
+</section>
+<section id="session-activities">
+<h2>Session Activities<a class="headerlink" href="#session-activities" title="Link to this heading">¶</a></h2>
+<p>This is a pretty packed session, but will give us a great foundation for moving forward learning spreadsheet based modeling.</p>
+<section id="excel-technique-review">
+<h3>Excel technique review<a class="headerlink" href="#excel-technique-review" title="Link to this heading">¶</a></h3>
+<p>Let’s start by reviewing a very important spreadsheet concept - absolute and relative cell addressing. It is essential that you firmly master this concept before moving on to spreadsheet model building. The following short video will review this topic and give you a chance to practice using it. In addition, we will review two related topics, R1C1 reference style and range names. In the Downloads file you’ll find a folder
+named Tutorials. In it you’ll find the <a class="reference external" href="https://kelley.iu.edu/albrightbooks/Downloads/Excel%20Tutorial%20for%20Windows.xlsx">Excel Tutorial from Albright’s Free Downloads page</a> along with an older version that I’ve added some things to. We’ll use the older version - it’s called
+<strong>excel_tutorial.xlsm</strong>.</p>
+<p>As you will see, these tutorial files provides a very comprehensive review of numerous Excel techniques that we will use throughout this course. Time spent reviewing this file will be time well spent. So, download the file and get it open on your computer. Then, watch the following short video and work along with it in the file provided above.</p>
+<p>NOTE: There were some screen zooming issues in the R1C1 section, and I’ve fixed them.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/5vecp_9x7No">SCREENCAST: Absolute/relative cell addressing, R1C1, range names (27:25)</a></p></li>
+</ul>
+</section>
+<section id="intro-to-modeling">
+<h3>Intro to Modeling<a class="headerlink" href="#intro-to-modeling" title="Link to this heading">¶</a></h3>
+<p>Here’s an introduction to basic modeling concepts, part 1. The Powerpoint slides from the Downloads file will be used during some of the video content in this module:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/gWi-ia-Bv6Q">SCREENCAST: Intro to Modeling</a></p></li>
+</ul>
+</section>
+<section id="influence-diagrams">
+<h3>Influence Diagrams<a class="headerlink" href="#influence-diagrams" title="Link to this heading">¶</a></h3>
+<p>The first modeling technique we will learn is called an influence diagram. It’s a great technique for getting started on building a spreadsheet model. There are some guidelines for creating influence diagrams in the slides for this module and here’s a short video on creating influence diagrams:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/5ur7qr7opC0">SCREENCAST: Getting started with influence diagrams</a></p></li>
+</ul>
+</section>
+<section id="prep-problems">
+<h3>Prep Problems<a class="headerlink" href="#prep-problems" title="Link to this heading">¶</a></h3>
+<p>Within the Downloads zip file for this module you’ll find my versions of the NCAA T-shirts and the Bookshelves prep problems. Take a look at them. Here’s a short video with my comments on my versions of the Prep Problems.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/crtIwv3YxKA">SCREENCAST: Prep Problems: Tshirts and Bookshelves (4:16)</a></p></li>
+</ul>
+</section>
+<section id="building-and-using-a-break-even-model">
+<h3>Building and using a break-even model<a class="headerlink" href="#building-and-using-a-break-even-model" title="Link to this heading">¶</a></h3>
+<p>Now we will build a simple break even model and use it to do some sensitivity analysis and “backsolving”. This is Example 2.3 from the PMS Ch2 PDF (or Chapter 1 in 7ed of BA textbook). However, I demonstrate a number of additional techniques not covered in the chapter and also try to relate the model building process to some of the modeling building hueristics discussed earlier in this lesson. I’ve broken up the model building session into a few separate videos. You’ll need the <strong>Ex0203-BreakevenAnalysis-template.xlsx</strong> file included in the Downloads zip file for this module.</p>
+<p>In the first video, we construct the base model and learn some model verification techniques.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/gGhMwL-MkDk">SCREENCAST: Break Even - Base Model (35:44)</a></p></li>
+</ul>
+<p>In the second video, we do some sensitivity analysis using a one way data table.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/dSgCl14mO5I">SCREENCAST: Break Even - One Way Data Table (17:41)</a></p></li>
+</ul>
+<p>In the third video we find the break even point using Goal Seek and see how we can automate the process by recording a simple macro. Simple conditional formatting is also demonstrated and an advanced conditional formatting challenge is posed. We also do a little graphing to visualize the break even point and the form of the profit function.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/8HNORy3oc8M">SCREENCAST: Break Even - Find Break Even Point (9:44)</a></p></li>
+</ul>
+<p>In the fourth video we take the sensitivity analysis one step further with a two way data table.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/io3Oq9xdRLc">SCREENCAST: Break Even - Two Way Data Table (8:42)</a></p></li>
+</ul>
+</section>
+<section id="more-modeling-heuristics-and-spreadsheet-design-tips">
+<h3>More modeling heuristics and spreadsheet design tips<a class="headerlink" href="#more-modeling-heuristics-and-spreadsheet-design-tips" title="Link to this heading">¶</a></h3>
+<p>Slides 25-37 in the <code class="docutils literal notranslate"><span class="pre">BA-Modeling-1.pptx</span></code> file have several more modeling heuristics and a summary of
+spreadsheet design tips (many of which we’ve seen in action in the Break Even model). Take a look
+at these as they will prove helpful throughout the semester.</p>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://online.hbs.edu/blog/post/why-airlines-overbook-using-toy-models-to-maximize-revenues">Why airlines overbook: Using toy models to maximize revenue</a> - captures the spirit of the value of simple, “toy” models</p></li>
+</ul>
+<p>As someone who learned
+spreadsheeting on Version 1a* of Lotus 1-2-3, I have a fondness for the history of spreadsheets. Life was simple, just do /rnc and you can make a new range name.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.geekwire.com/2015/recalc-or-die-30-years-later-microsoft-excel-1-0-vets-recount-a-project-that-defied-the-odds/">‘Recalc or Die’: MS veterans recall early days of Excel</a> - This just came out a few years ago. It’s a great read.</p></li>
+<li><p>While we’re on the subject of spreadsheet anniversaries, check out these two terrific sites dedicated to the history of the spreadsheet. The first, <a class="reference external" href="http://www.bricklin.com/history/sai.htm">Software Arts and Visicalc</a>, was created by Dan Bricklin, one of the original creators of Visicalc. It’s a fascinating site with the history of the Visicalc’s development, screenshots of the original documentation cards and even a link to a working(!) version of Visicalc. For another look at the <a class="reference external" href="http://dvandusen.no-ip.info:8080/visicalc_story/Visicalc_wiki_2.htm">Story Behind the Story of Visicalc</a> …</p></li>
+<li><p>Next is Dan Power’s <a class="reference external" href="http://dssresources.com/history/sshistory.html">A Brief History of Spreadsheets</a>.</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Spreadsheet based modeling</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#session-activities">Session Activities</a><ul>
+<li><a class="reference internal" href="#excel-technique-review">Excel technique review</a></li>
+<li><a class="reference internal" href="#intro-to-modeling">Intro to Modeling</a></li>
+<li><a class="reference internal" href="#influence-diagrams">Influence Diagrams</a></li>
+<li><a class="reference internal" href="#prep-problems">Prep Problems</a></li>
+<li><a class="reference internal" href="#building-and-using-a-break-even-model">Building and using a break-even model</a></li>
+<li><a class="reference internal" href="#more-modeling-heuristics-and-spreadsheet-design-tips">More modeling heuristics and spreadsheet design tips</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="kickoff.html"
+                          title="previous chapter">Intro to Business Analytics course</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="simple_math_models.html"
+                          title="next chapter">Simple mathematical models</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/spreadsheet_based_modeling.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="simple_math_models.html" title="Simple mathematical models"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="kickoff.html" title="Intro to Business Analytics course"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" >Foundation for spreadsheet analytics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Spreadsheet based modeling</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Simple mathematical models &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data wrangling and visualization" href="data_wrangling_eda.html" />
+    <link rel="prev" title="Spreadsheet based modeling" href="spreadsheet_based_modeling.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="data_wrangling_eda.html" title="Data wrangling and visualization"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="spreadsheet_based_modeling.html" title="Spreadsheet based modeling"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" accesskey="U">Foundation for spreadsheet analytics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Simple mathematical models</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="simple-mathematical-models">
+<h1>Simple mathematical models<a class="headerlink" href="#simple-mathematical-models" title="Link to this heading">¶</a></h1>
+<p>In this module we’ll explore a handful of simple mathematical models for relating input and output variables of interest - linear, power, exponential, and logistic. We’ll even take a look at the Pythagorean Theorem of Baseball - if you’ve seen Moneyball (or read the book), this equation was actually shown in one of the film sequences. I hope you come away with an appreciation for the power and elegance of such simple models. Of course, along the way, we’ll pick up some more serious Excel wizardry.</p>
+<p>I’ll make available a set of skeleton notes that we’ll use to explore the different model forms in more detail.</p>
+<p>Recall, last time we started to talk about various modeling heuristics - common sense ways to approach complex problems. Here’s a good heuristic …</p>
+<img alt="_images/heuristic.jpg" src="_images/heuristic.jpg" />
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">¶</a></h2>
+<p>In completing the activities in this module you will:</p>
+<ul class="simple">
+<li><p>become familiar with common mathematical models that can be useful for business modeling,</p></li>
+<li><p>learn to fit common models using data and assess model fit using different metrics</p></li>
+<li><p>learn how to use advanced Excel functions and tools such as LINEST and the Data Analysis Toolpak,</p></li>
+<li><p>start to gain an appreciation for the relative ease of fitting models compared to the difficult nature of using models to accurately predict using new data.</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Example 2.5 - Estimating sensitivity of demand to price at the Links company in the same PDF we used for the Prep Problems. Equivalently, the material in this PDF has now been included in Ch1 of the 7th edition of our Business Analytics textbook.</p></li>
+<li><p>Sections 12.1-12.4 in our Business Analytics textbook are also relevant.</p></li>
+</ul>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1mXZaNLueF5E1Irn76ZR-Jmep9bdKg4Tb/view?usp=sharing">Downloads-Module03-SimpleMathModels.zip</a></p></li>
+</ul>
+</section>
+<section id="session-activities">
+<h2>Session Activities<a class="headerlink" href="#session-activities" title="Link to this heading">¶</a></h2>
+<section id="getting-started">
+<h3>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h3>
+<p>You can find the slides and the short Lecture Note used to structure this session inside the Downloads file.
+You’ll notice that there are a few optional topics. Feel free to skip these for now and you can always take a look at them later.</p>
+<p>Introduces idea of simple mathematical models for capturing relationships between important variables in some business problem (such price v demand, sales v time)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/JpiTxtwogfM">SCREENCAST: Simple Math Models - Getting Started (11:31)</a></p></li>
+</ul>
+</section>
+<section id="pythagorean-theorem-of-baseball">
+<h3>Pythagorean Theorem of Baseball<a class="headerlink" href="#pythagorean-theorem-of-baseball" title="Link to this heading">¶</a></h3>
+<p>Now let’s look at an interesting little model developed by the grandfather of sabermetrics, Bill James. It was featured in Moneyball. We’ll use this as an example to talk about the power of simple models, the role of model parameters and comparing competing model forms.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/DYrJLIswLes">SCREENCAST: SimpleMathModels - Pythagorean Theorem of Baseball (14:03)</a></p></li>
+</ul>
+</section>
+<section id="linear-model">
+<h3>Linear Model<a class="headerlink" href="#linear-model" title="Link to this heading">¶</a></h3>
+<p>While we will cover a handful of mathematical model forms, we’ll start with the model that’s probably most familiar to you. However, you might not know 6 different ways to do linear regression in Excel. This will also highlight the very important topic of metrics for evaluating model performance.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/FHJw3vgLyoQ">SCREENCAST: Simple Math Models - Linear (32:05)</a></p></li>
+</ul>
+</section>
+<section id="power-model">
+<h3>Power Model<a class="headerlink" href="#power-model" title="Link to this heading">¶</a></h3>
+<p>Power models see wide use in everything from economics to laws of nature such as the relationship between an animal’s metabolic rate and their body mass.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/44osywKlFM8">SCREENCAST: Simple Math Models - Power (18:30)</a></p></li>
+</ul>
+</section>
+<section id="exponential-and-logistic-models">
+<h3>Exponential and Logistic Models<a class="headerlink" href="#exponential-and-logistic-models" title="Link to this heading">¶</a></h3>
+<p>Exponential growth can be scary.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/iWNzdFDdgHY">SCREENCAST: Simple Math Models - Exponential (19:49)</a></p></li>
+</ul>
+<p>Did you know it’s easy to turn an exponential growth model into a linear growth model? See Moore’s Law in action and also learn some useful chart construction techniques including addition of new series to existing charts and solving the mystery of Excel refusing to plot your exponential trend line.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/eRsh1L84MdA">SCREENCAST: Simple Math Models - Exponential becomes Linear (10:58)</a></p></li>
+</ul>
+<p>[OPTIONAL] This model is a remedy to unrealistic sustained exponential growth. Again, gets wide use in both business and the natural world to capture the fact that there are usually limits (resources, competition, obselescence, …) to continued exponential growth. Right near the end of this screencast is something
+pretty cool that happens in Excel with this model. :) And, if you want to know a little more about this phenomenon and how the logistic model is
+related to the chaos theory, fractals, and the Mandelbrodt set, check output
+this <a class="reference external" href="https://www.youtube.com/watch?v=ovJcsL7vyrk">video on the Veritasium channel.</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/usxVqd-tyD4">SCREENCAST [OPTIONAL]: Simple Math Models - Logistic (18:50)</a></p></li>
+</ul>
+</section>
+<section id="the-golf-clubs-pricing-problem">
+<h3>The Golf Clubs Pricing Problem<a class="headerlink" href="#the-golf-clubs-pricing-problem" title="Link to this heading">¶</a></h3>
+<p>This is another example that we’ll borrow from the PMS Ch2 PDF. It is Example 2.5 Estimating Sensitivity of Demand to Price at the Links Company. You will find a subfolder named GolfClubsPricingExample inside the Downloads file for this module. It’s got the skeleton Excel file you’ll need as well as a PDF giving a 30,000 foot overview of the problem.</p>
+<p>We will fit three different models and learn how to compare their fit using a variety of metrics such as MAD, MSE, and RMSE.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/KTX9vTgzdkc">SCREENCAST: Golf Clubs Pricing - Model Fitting (19:16)</a></p></li>
+</ul>
+<p>Now that we have a pricing model, we can embed it a pricing optimization model. Includes some fancy function footwork using INDEX and MATCH.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/QGHiw_PdrwQ">SCREENCAST: Golf Clubs Pricing - Optimal Price (23:06)</a></p></li>
+</ul>
+</section>
+<section id="uncertainty-the-elephant-in-the-room">
+<h3>Uncertainty - The elephant in the room<a class="headerlink" href="#uncertainty-the-elephant-in-the-room" title="Link to this heading">¶</a></h3>
+<p>What about uncertainty? We’ve dealt with it only via some rather rudimentary sensitivity analysis and curve fitting. This last screencast will discuss this issue a bit, demonstrate a real model from the healthcare world that directly deals with uncertainty, and closes with some concluding thoughts on the difficult craft that is quantitative and computer modeling. We will be revisiting the question of modeling uncertainty later in the semester.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/MZ5MLrhp32E">SCREENCAST: Simple Math Models - 7-11 and Conclusion (34:19)</a></p></li>
+</ul>
+</section>
+</section>
+<section id="explore-optonal">
+<h2>Explore (OPTONAL)<a class="headerlink" href="#explore-optonal" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="https://xkcd.com/2048/">xkcd on trend fitting in Excel</a></p>
+<section id="id1">
+<h3><a class="reference external" href="https://www.youtube.com/playlist?list=PLF7CBA45AEBAD18B8">Mathematical Doodling</a><a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>Vi Hart was featured in the <a class="reference external" href="https://www.nytimes.com/2011/01/18/science/18prof.html">Jan 18, 2011 Science section of the NY Times</a>.The first one of her videos I ever saw was <a class="reference external" href="https://www.youtube.com/watch?v=e4MSN6IImpI&amp;t=0s&amp;list=PLF7CBA45AEBAD18B8&amp;index=2">Doodling in Math Class: Binary Trees</a>.</p>
+</section>
+<section id="the-crater-model">
+<h3>The Crater model<a class="headerlink" href="#the-crater-model" title="Link to this heading">¶</a></h3>
+<p>Here are links to two follow up stories on the use of the Crater model.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.nytimes.com/2003/06/08/us/questions-raised-on-equation-nasa-used-on-shuttle-peril.html?src=pm">http://www.nytimes.com/2003/06/08/us/questions-raised-on-equation-nasa-used-on-shuttle-peril.html?src=pm</a></p></li>
+<li><p><a class="reference external" href="http://www.nytimes.com/2003/08/25/us/computer-program-that-analyzed-shuttle-damage-was-misused-engineer-says.html?pagewanted=all&amp;src=pm">http://www.nytimes.com/2003/08/25/us/computer-program-that-analyzed-shuttle-damage-was-misused-engineer-says.html?pagewanted=all&amp;src=pm</a></p></li>
+</ul>
+</section>
+<section id="excel-s-2016-forecasting-tool">
+<h3>Excel’s 2016 Forecasting tool<a class="headerlink" href="#excel-s-2016-forecasting-tool" title="Link to this heading">¶</a></h3>
+<p>Microsoft added some <a class="reference external" href="https://www.microsoft.com/en-us/microsoft-365/blog/2015/10/06/one-click-forecasting-in-excel-2016/">basic time series forecasting models to Excel 2016</a>. We now have an entire class on time series forecasting in the SBA - QMM 4520.</p>
+</section>
+<section id="more-on-trend-line-fitting">
+<h3>More on trend line fitting<a class="headerlink" href="#more-on-trend-line-fitting" title="Link to this heading">¶</a></h3>
+<p>We have seen how easy it is to fit a trend line to data in an X-Y scatter chart. Excel allows us to fit a linear, power, exponential, logarithmic or polynomial function to our data and display the equation (the fitted model) on the chart.</p>
+<p>While this is very handy, sometimes we want to use the various parameter values from the fitted trend lines in our spreadsheets. That’s often why we fit the trend line (our model of the data) in the first place. So, how can we fit these trend lines using Excel functions in such a way that we can get the actual parameter values into cells (and so they are not just a label on the graph)?</p>
+<p>The spreadsheet TrendFittingFunctions.xlsx (found in the Downloads zip file for Module 3) shows how this can be done for linear, exponential, logarithmic, power and polynomial trend lines. While the details differ for each of the five models, several features pop up in more than one model: use of LINEST(), the array function for fitting linear regression models, use of LN(), LOG10() functions and the properties of exponentials and logarithms to transform non-linear regression problems into linear regression problems (for which we can use LINEST()).</p>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Simple mathematical models</a><ul>
+<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#session-activities">Session Activities</a><ul>
+<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li><a class="reference internal" href="#pythagorean-theorem-of-baseball">Pythagorean Theorem of Baseball</a></li>
+<li><a class="reference internal" href="#linear-model">Linear Model</a></li>
+<li><a class="reference internal" href="#power-model">Power Model</a></li>
+<li><a class="reference internal" href="#exponential-and-logistic-models">Exponential and Logistic Models</a></li>
+<li><a class="reference internal" href="#the-golf-clubs-pricing-problem">The Golf Clubs Pricing Problem</a></li>
+<li><a class="reference internal" href="#uncertainty-the-elephant-in-the-room">Uncertainty - The elephant in the room</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optonal">Explore (OPTONAL)</a><ul>
+<li><a class="reference internal" href="#id1">Mathematical Doodling</a></li>
+<li><a class="reference internal" href="#the-crater-model">The Crater model</a></li>
+<li><a class="reference internal" href="#excel-s-2016-forecasting-tool">Excel’s 2016 Forecasting tool</a></li>
+<li><a class="reference internal" href="#more-on-trend-line-fitting">More on trend line fitting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="spreadsheet_based_modeling.html"
+                          title="previous chapter">Spreadsheet based modeling</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="data_wrangling_eda.html"
+                          title="next chapter">Data wrangling and visualization</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/simple_math_models.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="data_wrangling_eda.html" title="Data wrangling and visualization"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="spreadsheet_based_modeling.html" title="Spreadsheet based modeling"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" >Foundation for spreadsheet analytics</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Simple mathematical models</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

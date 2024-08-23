@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Intro to statistical predictive modeling - go beyond this class (OPTIONAL) &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Simulation modeling" href="simulation.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="simulation.html" title="Simulation modeling"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="adv_modeling.html" accesskey="U">Advanced modeling techniques</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Intro to statistical predictive modeling - go beyond this class (OPTIONAL)</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="intro-to-statistical-predictive-modeling-go-beyond-this-class-optional">
+<h1>Intro to statistical predictive modeling - go beyond this class (OPTIONAL)<a class="headerlink" href="#intro-to-statistical-predictive-modeling-go-beyond-this-class-optional" title="Link to this heading">¶</a></h1>
+<p>The massive increases in both the amount of available electronic data as well in cheap computing power has contributed to an area that has been termed “data mining” or “knowledge discovery in databases” or “data science” or “big data”. Of course, along with much true value there is always some hype (some statistics folks derisively refer to data mining as “data dredging” or “fishing expeditions”). As always with quant methods, there are pros, cons, and underlying assumptions of any technique. What is particularly interesting about data science is that it has brought together people from multiple fields - statistics, information systems, computer scientists, operations researchers, management scientists. Anytime we get academics/researchers/wizards out of their individual ivory towers and talking to their peers in a shared courtyard, good stuff happens.</p>
+<p>In a nutshell, data science is the use of a wide range of techniques that borrow, to differing extents, their ideas from the worlds of probability, statistics, pattern recognition, computer science, databases, and large scale computing to unearth useful information from giant quantities of data. There are different types of data mining problems such as reduction, classification, association and prediction and different techniques are used in different ways depending on the problem. Some of these techniques, like multiple regressions, are old classical statistical techniques while others like neural networks are more recent innovations from the world of artificial intelligence. The data we mine tends to be “big” both in terms of number of rows, but perhaps more importantly, in the number of columns (variables). Teasing out meaningful, relationships among these many variables, related in complex ways, is a goal of data mining. While we are often used to working with nicely structured tables of numeric and categorical data, data mining dares to venture into the messy world of text analytics (e.g. Twitter feeds) and other unstructured data. I’ve had a bit of experience with this in dealing with a myriad of free text fields in hospital databases (e.g. “Reason for visit to ER”, and unbelievably, “Expected due date” for an OB patient).</p>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Link to this heading">¶</a></h2>
+<p>So, in this module I hope to:</p>
+<ul class="simple">
+<li><p>Introduce you to the general topic of data science and some of the shared concepts that underlie the field</p></li>
+<li><p>Introduce and show examples of the main families of data science problems</p></li>
+<li><p>Give you an opportunity to try out some of these techniques</p>
+<ul>
+<li><p>we can actually use Excel to explore simple versions of some of these techniques</p></li>
+<li><p>JMP implements many statistical predictive modeling techniques.</p></li>
+<li><p>The Palisade Decision Tools Suite (of which &#64;Risk is a part) contains a few “data mining” algorithms. Logistic regression and discriminant analysis are included in StatTools and neural networks are in NeuralTools.</p></li>
+<li><p>In addition, Ch 17-3 of our textbook shows how you can use a free add-in from MS called the Microsoft Data Mining Add-In for Excel. Unfortunately this requires a connection to a SQL Server Analysis Server database.</p></li>
+<li><p>Some of the videos use XLMiner. You can get a 15 day free trial version of it at <a class="reference external" href="http://www.solver.com/xlminer-data-mining">http://www.solver.com/xlminer-data-mining</a>.</p></li>
+<li><p>lots of free and open source software out there for data science (the R and Python communities are especially active in this area)</p></li>
+</ul>
+</li>
+<li><p>Whet your appetite for this fascinating field
+- Data science has become a “sport” - check out <a class="reference external" href="http://www.kaggle.com/">http://www.kaggle.com/</a>. Kaggle has become much more than a predictive modeling competiton site. It’s now a great center of learning for those interested in predictive modeling and machine learning, as well as a source of many interesting datasets.
+- Read “The Signal and the Noise” by Nate Silver.</p></li>
+</ul>
+<p>We certainly will not have time to cover all of the stuff below during class time. However, you can revisit the stuff we don’t get to after the term. If you want to learn more about this topic, consider taking MIS 4560/5560 - Intro to Data Science or my <a class="reference external" href="http://www.sba.oakland.edu/faculty/isken/courses/pcda/">MIS 4470/5470 - Practical Computing for Data Analytics</a> (uses Linux, R, and Python) course. In the 4560/5560 course, you’ll use JMP or SAS or other tools like RapidMiner which implements many commonly used data mining techniques.</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Business Analytics - Chapter 10-11: Regression Analysis</p></li>
+</ul>
+<p>Yep, good ol’ regression is one of the workhorses of data mining.</p>
+<ul class="simple">
+<li><p>Business Analytics - Chapter 17: Data Mining</p></li>
+</ul>
+<p>This chapter provides a great introduction to the main data mining techniques that are used for reduction, classification, prediction and association (the major families of data mining problems).</p>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1pd5jPdA17vb0Y0O1bcU5BZLqkV4vSDEA/view?usp=sharing">Downloads_Data Science.zip</a></p></li>
+</ul>
+<p>If interested, here is the courseweb page for the first night of class in MIS 4470/5470 - Practical Computing for Data Analytics. You’ll find screencasts that cover everything we do that first class and get a really good feel for a totally different way of doing analytics work.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.sba.oakland.edu/faculty/isken/courses/pcda/kickoff.html">Intro to Practical Computing for Data Analytics (MIS 4470/5470)</a></p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<p>You can find a set of PPT slides in the downloads file.</p>
+<section id="classes-of-data-science-modeling-techniques">
+<h3>Classes of data science modeling techniques<a class="headerlink" href="#classes-of-data-science-modeling-techniques" title="Link to this heading">¶</a></h3>
+<p>There are several families of problems and many, many algorithms that might be considered part of the domain of data science. But let’s start by just considering a few general families of data science problems. Different people might define some of these slightly differently, but I’ll try to stick to the textbook’s families but add my own comments and caveats.</p>
+<p>The four families of common data mining problems are:</p>
+<ul class="simple">
+<li><p>Data exploration and reduction - reduce a bunch of data down into interesting and useful groups</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Example: Market segmentation models</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Classification - predict what class a newly observed data point will fall into</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Example: Is this credit card transaction fraudulent?</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Association - which things are associated with which other things</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Example: The apocryphal story of beer and diapers relationship</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Cause and effect-modeling - model relationships between dependent and independent variable</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Example: The Pythagorean Theorem of baseball</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="unsupervised-learning-cluster-analysis">
+<h3>Unsupervised learning - Cluster analysis<a class="headerlink" href="#unsupervised-learning-cluster-analysis" title="Link to this heading">¶</a></h3>
+<p>We have a lot of data and we want to reduce it down to a more manageable representation. A histogram is a type of data reduction. Often reduction boils down to putting similar things together into buckets (similar values end up in same bin in a histogram). Market segmentation models are a good example. Often, the number and “name” of the buckets isn’t really even known. Part of the mining process is to discover interesting buckets. One of the most well known techniques for this is called cluster analysis. It’s a multivariate statistical technique that’s been around for quite some time. We want to take individual data points and put them into clusters such that things within a single cluster are similar, but the clusters themselves are distinct from each other. Clustering pops in numerous fields such as biology (taxanomies of living creatures), medicine (disease variant identification), information retrieval (clusters of similar web pages), pattern recognition (classifying objects in photos) and business (market segmentation being the classic use case).</p>
+<p>So, clustering is a type of “classification” of things based on data about those things. In the data mining world, clustering is referred to as “unsupervised classification” where the unsupervised part refers to the fact that we do NOT have predefined classes that we are trying to put new items into. Supervised classification would be, for example, when we have a bunch of customer load data, including whether the customer defaulted or not on the loan, and we build a classifier model using this data to predict whether a new customer will default or not. We’ll talk about that later. For clustering, we don’t have predefined classes.</p>
+<p>One of the most well known methods for doing clustering is called K-means cluster analysis. We want to create clusters whose centroids are far away from each other but who has members that are close to their own centroid. K is the number of clusters and you have to specify it in advance. Wait, how do we know what K should be? We don’t. So, usually we try different values of K and then try to make sense of the solution - e.g. can we put a meaningful name on each cluster after we’ve seen their collection of data points. The other widely used approach is called hierarchical clustering. We either iteratively “fuse” data together into clusters (called agglomerative clustering) or iteratively break apart the whole data set into clusters (divisive clustering). Some sort of stopping rule is used to determine when we are done. You may wonder how it is we decide that two data points are “close to each other”. Well, there’s a whole bunch o’ distance metrics that get used as well as a whole bunch of different algorithms. The simplest, for all numeric data, is simple Euclidean distance.</p>
+<img alt="_images/euc_dist.png" src="_images/euc_dist.png" />
+<p>Often when we are clustering, we may have a number of attributes (variables) for each data point or observation. Here’s what a 3-D clustering result might look like:</p>
+<img alt="_images/Puh45.png" src="_images/Puh45.png" />
+<p>Doing a Google Images search on “cluster analysis” will give you a good visual sense of what clustering is doing.</p>
+<p>There isn’t one “right answer” that pops out of clustering. It’s an iterative, exploratory process by which you try to find interesting and meaningful clusters that provide some sort of value to you in the sense of analysis or decision making. It can be difficult to find distinct clusters in many datasets. Underlying clustering techniques are optimization problems - we want to minimize some distance metric for observations within a cluster while maximizing the distance between different clusters. There are many different algorithms for doing this, numerous details and side issues which are beyond what we can do in this class. I just hope to give you a sense of what clustering is about and how it might be used in the context of business.</p>
+<p>Let’s look at a simple example of doing clustering using Excel and the Evolutionary Solver. We’ll use the Colleges and Universities data set that we used for regression in the first part of this module. Within the Downloads you’ll find a file called UniversityClusters.xlsx. Let’s explore how we can find clusters of universities using basic K-means cluster analysis. We’ll use 4 clusters for this example.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/tdNvcWyHiZ0">Screencast - Cluster analysis of universities</a></p></li>
+</ul>
+</section>
+<section id="linear-regression">
+<h3>Linear regression<a class="headerlink" href="#linear-regression" title="Link to this heading">¶</a></h3>
+<p>Regression is still a workhorse of predictive modeling. Also, a thorough
+knowledge of regression modeling really helps learn the other
+predictive modeling techniques. It serves as a great vehicle for
+learning about the entire predicting modeling workflow cycle. Linear regression is covered in Ch 10-11 of Business Analytics.</p>
+<p>So, we have already seen bivariate regression models back in Module 2 on simple mathematical models. We fit models in Excel a bunch of different ways:</p>
+<ul class="simple">
+<li><p>scatter plots with trend lines</p></li>
+<li><p>Data Analysis Toolpak</p></li>
+<li><p>Slope() and Intercept() functions</p></li>
+<li><p>The Linest() array function</p></li>
+<li><p>and even using Solver</p></li>
+</ul>
+<p>We saw that we could use various error metrics like R^2 or RMSE to evaluate how well a linear model fits a given data set and how well it predicts on a new dataset.</p>
+<p>Now we don’t just have a single independent variable. We may have many independent variables. How do we fit such models? How do we assess how good they are? What happens if my independent variables are correlated with each other? Can I use categorical data? How do I use regression models for prediction?</p>
+<p><strong>NOTE</strong> The following screencasts are still at my old hosting site. I need to move them to YouTube but they should work through end of W23 semester.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/6puregKytuo">SCREENCAST - The multiple regression model (7:55)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/eIo2Tb-g2-Y">SCREENCAST - Putting the “least” in ordinary least squares (8:52)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/t-rbKOJ4Hgs">SCREENCAST - What is this R-squared you speak of? (5:01)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/xA-3WN_w7uM">SCREENCAST - Predicting college graduation rates: Intro (6:25)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/edm0R4ozh8o">SCREENCAST - Predicting college graduation rates: Explore and fit model (8:54)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/hiFDIqpwUho">SCREENCAST - Predicting college graduation rates: Assessing model fit (12:35)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/BONZTVmAu5k">SCREENCAST - Predicting college graduation rates: Checking regression assumptions (14:30)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/AAXWotO5deo">SCREENCAST - Predicting college graduation rates: Using model for prediction (8:45)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/w4R9AaAqWsQ">SCREENCAST - Predicting Major League Baseball wins: The multicollinearity problem (15:47)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/nvb-qMex9Wk">SCREENCAST - Predicting Major League Baseball wins: Predicting with new new data (6:53)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/YFHlgJhJ0j8">SCREENCAST - Using categorical variables in regression models (24:14)</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/lTgffhleslw">SCREENCAST - Modeling interactions among variables (5:39)</a></p></li>
+</ul>
+</section>
+<section id="classification">
+<h3>Classification<a class="headerlink" href="#classification" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/tMMeEOMGEU0">Screencast - Partitioning data with XLMiner (6:39)</a></p></li>
+</ul>
+<p>Classification problems are characterized by the desire to classify entities (records) into one or more predefined classes based on the values of other data attributes. For example, here’s a dataset from the Credit Approval Decisions.xlsx. We want to build a classifier model to help us approve or reject loan applications based on relevant independent variables like credit score and whether or not the applicant owns a home.</p>
+<img alt="_images/classification-1.png" src="_images/classification-1.png" />
+<p>So, the blue shaded columns are the independent variables and the green decision column is the classification that we want to predict. Before applying a classification algorithm to this dataset, we would recode the Decision column with 1=Approve and 0=Reject. We’d also have to recode the Homeowner field in a similar way (e.g. 1=Y, 0=N).</p>
+<p>A simple classifier might be to simply approve everyone with a credit score above a certain value such as 640. A slightly more sophisticated classifier might consider both credit score and years of credit history. So, now we can visualize the approve/reject decisions in two dimension.
+credit scatter 1</p>
+<p>Now, instead of the simple classifier that only looks at credit score we could try to find a line that slices the data in way that captures classifies the records more accurately by using both credit score and years of credit history. One possible alternative model is:</p>
+<img alt="_images/credit-scatter-1.png" src="_images/credit-scatter-1.png" />
+<p>Notice that this model actually has a higher misclassification rate but that they are different types of errors than the model above. More on misclassification below.</p>
+<p>This is the training dataset. We will train (build) a model on this data in which we have known class values (the Decision). Then we can use the model on a validation dataset that looks something like this:</p>
+<img alt="_images/credit-scatter-2.png" src="_images/credit-scatter-2.png" />
+<p>Ideally, we have another set of data to test whatever model “wins” the competition based on the validation dataset.</p>
+<p>XLMiner has facilities for partitioning datasets into training and validation sets. See Example 12.4 on p379 for the details. There’s a short screencast below showing data partitioning in action:</p>
+<p>There are various performance metrics for evaluating and comparing classification algorithms. One essential measure is something called the classfication confusion matrix. It’s just a simple table summarizing the correct and incorrect classification predictions. For the example above, it would look like:</p>
+<img alt="_images/classification-2.png" src="_images/classification-2.png" />
+<p>There are numerous classification approaches and algorithms, each with numerous variants or problem specific customizations. In this introduction, we’ll take a look at a few widely used techniques - descriminant analysis and logistic regression.</p>
+</section>
+<section id="classification-descriminant-analysis">
+<h3>Classification - Descriminant analysis<a class="headerlink" href="#classification-descriminant-analysis" title="Link to this heading">¶</a></h3>
+<p>Like k-NN, discriminant analysis, or LDA for “linear discriminant analysis” is used to classify new observations into a set of predefined classes. However, it works by creating “discriminant functions”.
+The basic steps to determine the class of an observation:
+1. Create linear discriminant functions of the form:</p>
+<p>$$ L = b_{1}X_1 + b_{2}X_2 + … + b_{n}X_n + c$$</p>
+<p>where <span class="math notranslate nohighlight">\(b_i\)</span> are the discriminant coefficients (weights) and are determined by maximizing between-group variance relative to within-group variance</p>
+<ol class="arabic simple" start="2">
+<li><p>One discriminant function is formed for each category.</p></li>
+<li><p>New observations are assigned to the class whose function L has the highest value.</p></li>
+</ol>
+<p>Notice that the discriminant functions are nothing more than simple linear functions of the input variables that are attempting to separate distinct classes of observations.</p>
+<p>LDA does assume that are independent variables are normally distributed though it seems to be pretty robust to violations of this assumption. There is quite a bit of statistical theory behind LDA and it has been around for a very long time (like many of the so called “data mining” techniques) - I learned about it in grad school in the 80’s and it was already old then. Get yourself a good multi-variate statistics book if you really want to learn about the underlying statistical theory. A classic, and still leading, text is <a class="reference external" href="https://www.amazon.com/Applied-Multivariate-Statistical-Analysis-6th/dp/0131877151/ref=sr_1_1?ie=UTF8&amp;qid=1529293024&amp;sr=8-1&amp;keywords=Applied-Multivariate-Statistical-Analysis">Applied Multivariate Statistical Analysis</a> by Johnson and Wichern.</p>
+<p>Here is a short screencast on doing LDA with Excel and Solver.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/jagfBeb99-A">Screencast - Using LDA to classify Wall Street Journal subscribers</a></p></li>
+</ul>
+</section>
+<section id="classification-logistic-regression">
+<h3>Classification - Logistic regression<a class="headerlink" href="#classification-logistic-regression" title="Link to this heading">¶</a></h3>
+<p>Logistic regression (LR) is a variant of ordinary linear regression. When we looked at linear regression earlier, recall that the dependent variable was continuous. In LR, the dependent variable is categorical - usually binary. So we use LR when we want to predict a variable with a 0 or 1 outcome. What’s nice is that we can interpret the output of an LR model as the Prob[Y=1]. So, we actually get a continuous output that we can interpret in a familiar way - it’s just a probability. So, instead of just classifying a credit approval application as Approve or Reject, we can interpret output as the probability of the customer being a good credit risk.</p>
+<p>Once we use our LR model to predict p=Prob(Y=1), we can use a “cutoff value”, usually 0.5, to then classify the new record as a 1 or a 0.</p>
+<p>So, let’s revisit our credit approval problem one last time and use LR as our classifier. LR is covered in Section 17-4a in our textbook.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/30gF54p_qls">Screencast - Using LR in our credit approval problem (5:40)</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Intro to statistical predictive modeling - go beyond this class (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#objectives">Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#activities">Activities</a><ul>
+<li><a class="reference internal" href="#classes-of-data-science-modeling-techniques">Classes of data science modeling techniques</a></li>
+<li><a class="reference internal" href="#unsupervised-learning-cluster-analysis">Unsupervised learning - Cluster analysis</a></li>
+<li><a class="reference internal" href="#linear-regression">Linear regression</a></li>
+<li><a class="reference internal" href="#classification">Classification</a></li>
+<li><a class="reference internal" href="#classification-descriminant-analysis">Classification - Descriminant analysis</a></li>
+<li><a class="reference internal" href="#classification-logistic-regression">Classification - Logistic regression</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="simulation.html"
+                          title="previous chapter">Simulation modeling</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/data_science.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="simulation.html" title="Simulation modeling"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="adv_modeling.html" >Advanced modeling techniques</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Intro to statistical predictive modeling - go beyond this class (OPTIONAL)</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

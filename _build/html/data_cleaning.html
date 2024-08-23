@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Data cleaning &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Intro to data visualization" href="data_viz.html" />
+    <link rel="prev" title="Some power Excel techniques" href="power_excel.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="data_viz.html" title="Intro to data visualization"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="power_excel.html" title="Some power Excel techniques"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" >Foundation for spreadsheet analytics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="data_wrangling_eda.html" accesskey="U">Data wrangling and visualization</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Data cleaning</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="data-cleaning">
+<h1>Data cleaning<a class="headerlink" href="#data-cleaning" title="Link to this heading">¶</a></h1>
+<p>Rarely is data all clean and ready for analysis. Enormous amounts of
+time are spent on a myriad of data cleaning and preparation tasks such as:</p>
+<ul class="simple">
+<li><p>extracting data elements from text files using string functions,</p></li>
+<li><p>getting data into a specific format required by some analysis tool,</p></li>
+<li><p>creating new fields or variables,</p></li>
+<li><p>dealing with missing or incorrect data,</p></li>
+<li><p>… and many more tasks required to get data ready for modeling and analysis.</p></li>
+</ul>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>In completing the activities in this module you will:</p>
+<ul class="simple">
+<li><p>learn about common data cleaning challenges,</p></li>
+<li><p>use advanced Excel techniques to clean up a set of text files,</p></li>
+<li><p>start to gain an appreciation for the value of developing text cleaning skills.</p></li>
+<li><p>get a first glimpse into the complex and powerful world of regular expressions</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<p>Most of the readings are things I created or web based resources (links throughout in appropriate places). However, the 7th edition of our BA textbook does include a new section 4.5 - Data Cleansing that is worth looking at.</p>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/15ezGNjOwuUiXx1SQCEJPlZVE_jXoqJID/view?usp=sharing">Downloads-MuddyData.zip</a></p></li>
+</ul>
+</section>
+<section id="screencasts-and-other-activities">
+<h2>Screencasts and other activities<a class="headerlink" href="#screencasts-and-other-activities" title="Link to this heading">¶</a></h2>
+<section id="evil-excel-error">
+<h3>Evil Excel Error<a class="headerlink" href="#evil-excel-error" title="Link to this heading">¶</a></h3>
+<p>I’d like to start by sharing a horrifying example from the bioinformatics industry of how importing data in Excel can lead to incorrect results.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/9RzlDrAl1SI">SCREENCAST: Excel and bioinformatics</a> (5:35)</p></li>
+</ul>
+<p><a class="reference external" href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-5-80">Mistaken Identifiers: Excel and Bioinformatics</a></p>
+<p>You can find the data file, named <strong>hgnc_downloads.txt</strong> in the Downloads file for this module. There’s also an <a class="reference external" href="http://www.webcitation.org/query.php?url=http://discover.nci.nih.gov/symbolmutation&amp;refdoi=10.1186/1471-2105-5-80">eSupplement</a> to the article. Frightening.</p>
+<p><strong>Postscript:</strong> In August, 2020, the <a class="reference external" href="https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates">scientists gave up and renamed the genes</a>!</p>
+<p><strong>Postscript Postscript:</strong> In August, 2021, <a class="reference external" href="https://theconversation.com/excel-autocorrect-errors-still-plague-genetic-research-raising-concerns-over-scientific-rigour-166554">this problem is still an issue and in this article the authors ends with call for using Python and R instead of Excel</a>.</p>
+</section>
+<section id="muddy-data-tutorial">
+<h3>Muddy Data Tutorial<a class="headerlink" href="#muddy-data-tutorial" title="Link to this heading">¶</a></h3>
+<p>I realized early on that “data wrangling” or dealing with messy data was something not taught in textbooks or classes. It was learned, painfully, on the job. So, many years ago I created this tutorial to try to teach a few concepts for getting messy data into spreadsheets.</p>
+<p>Now, of course, everyone talks about data cleaning all the time.</p>
+<blockquote>
+<div><p>“80% of your time in data science projects is spent on data cleaning and the other 20% is spent on complaining about data cleaning”. [someone, somewhere]</p>
+</div></blockquote>
+<p>You can find the zip file containing the tutorial document (<strong>MuddyDataTutorial.docx</strong>) as well as supporting data files above in the Downloads.</p>
+<p>Here is a screencast to help you get started on the tutorial. Just work your
+way through it and learn to embrace data cleaning. :)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/9We5vKaMreI">SCREENCAST: The Muddy Data Tutorial - Getting Started</a> (21:11)</p></li>
+</ul>
+</section>
+<section id="text-files-text-editors-and-a-regex-preview-optional">
+<h3>Text files, text editors and a regex preview (OPTIONAL)<a class="headerlink" href="#text-files-text-editors-and-a-regex-preview-optional" title="Link to this heading">¶</a></h3>
+<p>Text files are the “common currency” of data exchange. You need
+to get good at manipulating text files.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/RCpCKIKIBuo">SCREENCAST: Text files and text editors</a> (12:25)</p></li>
+</ul>
+<p>Regular expressions (regex) are magical, extremely powerful and simply must be a part of your analytics toolbox for data wrangling. In this class, we just touch
+on the basics and I go into more depth in MIS 4470/5470 - Practical Computing
+for Data Analytics.</p>
+<p>Let’s start with a few basic concepts.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/rsLPAkIL_VM">SCREENCAST: Getting started with regular expressions</a> (16:55)</p></li>
+</ul>
+<p>A great basic interactive tutorial is available at <a class="reference external" href="http://regexone.com/">http://regexone.com/</a>. We’ll work through a few of the lessons in the screencast above.</p>
+<p>My favorite interactive website for exploring and learning regex is <a class="reference external" href="http://regexr.com/">http://regexr.com/</a>.</p>
+<p>Three more really good sites for learning regular expressions:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.regular-expressions.info/">http://www.regular-expressions.info/</a></p></li>
+<li><p><a class="reference external" href="http://gnosis.cx/publish/programming/regular_expressions.html">http://gnosis.cx/publish/programming/regular_expressions.html</a></p></li>
+<li><p><a class="reference external" href="http://www.rexegg.com/">http://www.rexegg.com/</a></p></li>
+</ul>
+<p>Another good resource is the following blog post on regex. It also contains links to sites containing the “bare bones” regex that EVERY analyst should know.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.codinghorror.com/blog/2008/06/regular-expressions-now-you-have-two-problems.html">http://www.codinghorror.com/blog/2008/06/regular-expressions-now-you-have-two-problems.html</a></p></li>
+</ul>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<section id="tableau-releases-new-data-prep-tool">
+<h3>Tableau releases new data prep tool<a class="headerlink" href="#tableau-releases-new-data-prep-tool" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://www.tableau.com/products/prep">Tableau expanding to more pieces of the data analysis workflow</a> pipeline with a focus on simplicity for end user (read “no programming”). Interesting quote from the <a class="reference external" href="https://www.tableau.com/about/press-releases/2018/tableau-expands-platform-new-product-tableau-prep">press release</a> :</p>
+<p>“Tableau Prep will do for data preparation what Tableau did for analytics and Business Intelligence. It will take an otherwise painstaking and difficult task, and make it easy, visual, and direct, empowering more people to get to analysis faster,” said Francois Ajenstat, Chief Product Officer at Tableau. “Our customers often tell us that they love working with Tableau, but struggle when data is in the wrong shape for analysis. We believe data prep and data analysis are two sides of the same coin that should be deeply integrated and look forward to bringing fun, easy data prep to everyone regardless of technical skill set.”</p>
+</section>
+<section id="data-cleaning-matters">
+<h3>Data cleaning matters<a class="headerlink" href="#data-cleaning-matters" title="Link to this heading">¶</a></h3>
+<p>Below you’ll find a link to OpenRefine.org. This was a project initiated by Google (and called Google Refine) that they decided to stop development on and just release the code base to the open source community. It’s a web based tool for dealing with messy data and doing various data wrangling tasks. It’s got some nice videos to give you a sense of what it does. Very cool.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://openrefine.org/">OpenRefine.org</a> - This was a Google project (based on a technology they acquired) and then Google let it go to the open source community.</p></li>
+<li><p><a class="reference external" href="http://vis.stanford.edu/wrangler/">Wrangler</a> - This tool came out of Stanford’s Data Visualization Lab</p></li>
+<li><p><a class="reference external" href="https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html">For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights</a></p></li>
+<li><p>Several years ago I wrote a <a class="reference external" href="https://pubsonline.informs.org/doi/pdf/10.1287/ited.3.3.23">journal paper about the Muddy Data Tutorial and this class in general</a> - check it out if you are interested.</p></li>
+</ul>
+</section>
+<section id="heroics-and-fun-with-data-cleaning">
+<h3>Heroics and fun with data cleaning<a class="headerlink" href="#heroics-and-fun-with-data-cleaning" title="Link to this heading">¶</a></h3>
+<p>I’ll close this module with some favorite regex comics from xkcd. Remember to hover over the comic to see the mouseover message…</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://xkcd.com/208/">Regex xkcd 1 - regular expressions (elaborate scenarios)</a></p></li>
+<li><p><a class="reference external" href="http://xkcd.com/1031/">Regex xkcd 2 - s/keyboard/leopard/</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Data cleaning</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#screencasts-and-other-activities">Screencasts and other activities</a><ul>
+<li><a class="reference internal" href="#evil-excel-error">Evil Excel Error</a></li>
+<li><a class="reference internal" href="#muddy-data-tutorial">Muddy Data Tutorial</a></li>
+<li><a class="reference internal" href="#text-files-text-editors-and-a-regex-preview-optional">Text files, text editors and a regex preview (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#tableau-releases-new-data-prep-tool">Tableau releases new data prep tool</a></li>
+<li><a class="reference internal" href="#data-cleaning-matters">Data cleaning matters</a></li>
+<li><a class="reference internal" href="#heroics-and-fun-with-data-cleaning">Heroics and fun with data cleaning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="power_excel.html"
+                          title="previous chapter">Some power Excel techniques</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="data_viz.html"
+                          title="next chapter">Intro to data visualization</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/data_cleaning.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="data_viz.html" title="Intro to data visualization"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="power_excel.html" title="Some power Excel techniques"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" >Foundation for spreadsheet analytics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="data_wrangling_eda.html" >Data wrangling and visualization</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Data cleaning</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

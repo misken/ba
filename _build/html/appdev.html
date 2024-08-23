@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Excel application development &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Advanced modeling techniques" href="adv_modeling.html" />
+    <link rel="prev" title="Excel VBA" href="vba.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="adv_modeling.html" title="Advanced modeling techniques"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="vba.html" title="Excel VBA"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="vba_appdev.html" accesskey="U">Excel VBA and Application Dev’t</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Excel application development</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="excel-application-development">
+<h1>Excel application development<a class="headerlink" href="#excel-application-development" title="Link to this heading">¶</a></h1>
+<p>Now it’s time to start to put your new found Excel VBA skills to work in creating analytical, spreadsheet based applications.</p>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>In this module you’ll learn about:</p>
+<ul class="simple">
+<li><p>VBA topics such as arrays, more control logic structures and advanced use of the MsgBox</p></li>
+<li><p>principles for designing and developing spreadsheet based applications</p></li>
+<li><p>creating VBA driven user forms for user interfaces that go beyond just the worksheet grid</p></li>
+</ul>
+<p>While VBA is very powerful, we’ll also see that you can do pretty neat things with no VBA (but that look like VBA must have been needed).</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<p>In this session we’ll be mostly drawing on material from Chapters 7-12 in VBA for Modelers.</p>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1OuDJI-8zPwXDrGDq3YHxnDqFtISHQg1r/view?usp=sharing">Downloads-Module-AppDevBasics.zip</a></p></li>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/16mtAXrZ589RfmpiCfcy6QDIfb7iQHl_l/view?usp=sharing">Downloads-Module-UserForms.zip</a></p></li>
+</ul>
+</section>
+<section id="screencasts-and-other-activities">
+<h2>Screencasts and other activities<a class="headerlink" href="#screencasts-and-other-activities" title="Link to this heading">¶</a></h2>
+<section id="intro-to-excel-application-development">
+<h3>Intro to Excel application development<a class="headerlink" href="#intro-to-excel-application-development" title="Link to this heading">¶</a></h3>
+<p>Now it’s time to start to put your new found Excel VBA skills to work in creating analytical, spreadsheet based applications.</p>
+<p>In this session we’ll be mostly drawing on material from Chapters 7-12 in VBA for Modelers.</p>
+<p>Overview document of this module: <a class="reference external" href="https://drive.google.com/file/d/1SHf0xd_wmVwU-BpssspCsAxaz8sTZlDG/view?usp=sharing">ExcelVBASession3-Overview.pdf</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/hncOmn9TwUA">SCREENCAST - Intro to Excel Application Development</a> (2:08)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/B3vJeOEkx4U">SCREENCAST - Arrays</a> (9:30)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/GTmrG-88ZQ4">SCREENCAST - For-Each loops</a> (3:02)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/P7Rz6Gj8TZg">SCREENCAST - Select-Case as an alternative to crazily nested If-Then-ElseIf</a> (4:40)</p></li>
+</ul>
+<p>While VBA allows you to do some incredible things with Excel, you can do some pretty incredible stuff with NO VBA.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/_aOPyZ-FjBA">SCREENCAST - Example of a VBA-free Climate Data Viz Tool</a> (9:03)</p></li>
+</ul>
+<p>One of the best ways to learn how to develop VBA based apps is to have a need for some tool or functionality and use that as an excuse. So, I’m going to share just such an experience with you.  It’s a nice little example that helps illustrate the thought process one might go through to solve a relatively focused little problem - create a subroutine to list out all the comments on a worksheet. See slides 13-14 and the file <code class="docutils literal notranslate"><span class="pre">PatientTypes.xlsx</span></code> if you want to see a few versions of the “answer.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/VVbGCE_67fg">SCREENCAST - Creating a Cell Comment Lister Tool</a> (23:59)</p></li>
+</ul>
+<p>There are a few things you can do to make your life easier as you are learning to develop VBA driven apps. These include maximizing <em>design time development</em> and developing modular applications. Please read the chapters referenced in the slides and see the referenced examples. Focus on basic understanding of subs vs functions as well as passing input parameters into subs and functions. Then move on to more advanced concepts such as <em>scope</em> and different methods of argument passing.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/uJ_zn42b7kQ">SCREENCAST - Design Time Development</a> (14:22)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/MOg0rGOnMIg">SCREENCAST - Creating Modular Applications</a> (31:45)</p></li>
+</ul>
+<p>We’ll end this module with a series on creating user forms in Excel so that you can create a GUI that goes beyond just using the spreadsheet grid. We’re actually just going to follow along with the example constructed in Chapter 11 of the VBA book (of course, I have a bunch of other niceties to add but the book covers the essentials).</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/tdk6fDF8F8o">SCREENCAST - User Forms: Getting Started</a> (7:31)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/_8tqoERWK7c">SCREENCAST - User Forms: Adding Controls</a> (30:19)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/RsEK2G_-MzI">SCREENCAST - User Forms - Adding Code</a> (33:48)</p></li>
+</ul>
+</section>
+<section id="a-vba-driven-scheduling-optimization-application">
+<h3>A VBA driven scheduling optimization application<a class="headerlink" href="#a-vba-driven-scheduling-optimization-application" title="Link to this heading">¶</a></h3>
+<p>A VBA driven, optimization based application</p>
+<p>The following example is from Ch 22 in our VBA for Modelers text. It’s a nice example of a relatively straightforward VBA app. It illustrates some important concepts such as:</p>
+<ul class="simple">
+<li><p>minimize VBA use via design time development</p></li>
+<li><p>modular programming via use of multiple subroutines</p></li>
+<li><p>validation of user form inputs</p></li>
+<li><p>automation of Solver</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">.Text</span></code> property vs <code class="docutils literal notranslate"><span class="pre">.Value</span></code> property for form controls? Nice explanation at <a class="reference external" href="http://stackoverflow.com/questions/2844193/distinction-between-using-text-and-value-in-vba-access">http://stackoverflow.com/questions/2844193/distinction-between-using-text-and-value-in-vba-access</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1k0R8fib8sxGY535Eg3IsUQ9zc7Ia5tL8/view?usp=sharing">Downloads-SolverSchedulingApp.zip</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/1m00BIgsMQg">SCREENCAST - Intro to Scheduling App and Validating User Inputs</a> (39:23)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/taoz0eIBp2I">SCREENCAST - Solve scheduling problem and create report</a> (18:26)</p></li>
+</ul>
+</section>
+<section id="porfolio-optimization-with-automated-web-queries-optional">
+<h3>Porfolio Optimization with Automated Web Queries (OPTIONAL)<a class="headerlink" href="#porfolio-optimization-with-automated-web-queries-optional" title="Link to this heading">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>As we saw the very first week of class, a few years ago <a class="reference external" href="https://www.thespreadsheetguru.com/blog/add-real-time-stock-prices-and-metrics-to-excel/">Yahoo stopped allowing these types of web queries</a>. I’m keeping this material up here as they are still
+useful from a learning perspective. Furthermore, many of the concepts can still be used if a replacement for the financial data is found. I’ve
+had students do final projects that have done exactly that.</p>
+</div>
+<p>With the glut of data available on the web, it’s nice to be able to use VBA to automatically retrieve web based data for use in spreadsheet models. In this example, we are going to get stock price data from Yahoo Finance and use it in a portfolio optimization model that we create and solve in Excel using Solver. In addition, we’ll see the use of additional form controls such as calendars and multi-select list boxes. This example is based on Chapter 32 in VBA for Modelers.
+One of the files I use to teach web queries, <code class="docutils literal notranslate"><span class="pre">DJI_StockQuery-MI.xls</span></code>, uses Microsoft’s Calendar Control to allow the user to pick start and end dates for a set of historical stock prices. This control has been around FOREVER. So, I noticed last semester that the Calendar Control was not in the Additional Controls dialog and confirmed it when I tried my stock price app, it’s gone. Microsoft killed it. Follow this link for alternatives. Thankfully, It was simple to just replace the Calendar Control with the new Microsoft Date and Time Picker Control. I then just renamed those controls to the same names as the original Calendar Controls (calStartDate and calEndDate) and didn’t have to change a single line of code. The new file is included in the Downloads zip file.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1OBNrq0-EOKlo8Up4QBavpO0uQFd6hTwk/view?usp=sharing">Downloads-WebQueriesAndPortfolioOpt_W18.zip</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/ZtCa5rnR1C8">SCREENCAST - Web Queries - Part 1: Introduction to Creating and Understanding Web Queries</a> (21:47)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/ITW-fZMaSvs">SCREENCAST - Web Queries - Part 2: The User Forms (including multi-select list box and date/time pickers)</a> (24:29)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/vXwv0_IcGkE">SCREENCAST - Web Queries - Part 3: VBA Based Web Queries</a> (29:24)</p></li>
+</ul>
+<p>There have been a number of books that have come out recently about finance quants on Wall Street.</p>
+<p>One book is entitled “The Quants: How a New Breed of Math Whizzes Conquered Wall Street and Nearly Destroyed It” by Scott Patterson.</p>
+<p>It looks like the author along with the famous Ed Thorp (did you see the movie, “21”) were also interviewed by Terry Gross on the radio show Fresh Air. Here’s the link to a book excerpt and to the radio interview: <a class="reference external" href="http://www.npr.org/templates/story/story.php?storyId=123209339">http://www.npr.org/templates/story/story.php?storyId=123209339</a></p>
+<p>Other recent books on the subject include:</p>
+<ul class="simple">
+<li><p>How I Became a Quant: Insights from 25 of Wall Street’s Elite</p></li>
+<li><p>My Life as a Quant: Reflections on Physics and Finance</p></li>
+</ul>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<p>A former student passed these on to me. They are tutorials from Chris Newman, the creator of <a class="reference external" href="https://www.thespreadsheetguru.com/">https://www.thespreadsheetguru.com/</a> and focus on advanced user form techniques. He also has some practical advice for application design.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=9qn8-Ix1O88&amp;feature=youtu.be">Episode 01: Turning Ideas Into Reality</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=s5xAWx3sPuA&amp;feature=youtu.be">Episode 02: Building Modern Userforms</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=dqVU_Z8Wlmk&amp;feature=youtu.be">Episode 03: VBA Tips For Your Userforms</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=pO2tqE278Sg&amp;feature=youtu.be">Episode 04: Taking Excel Userforms To The Next Level</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Excel application development</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#screencasts-and-other-activities">Screencasts and other activities</a><ul>
+<li><a class="reference internal" href="#intro-to-excel-application-development">Intro to Excel application development</a></li>
+<li><a class="reference internal" href="#a-vba-driven-scheduling-optimization-application">A VBA driven scheduling optimization application</a></li>
+<li><a class="reference internal" href="#porfolio-optimization-with-automated-web-queries-optional">Porfolio Optimization with Automated Web Queries (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="vba.html"
+                          title="previous chapter">Excel VBA</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="adv_modeling.html"
+                          title="next chapter">Advanced modeling techniques</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/appdev.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="adv_modeling.html" title="Advanced modeling techniques"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="vba.html" title="Excel VBA"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="vba_appdev.html" >Excel VBA and Application Dev’t</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Excel application development</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

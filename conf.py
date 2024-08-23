@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'mis5460'
-copyright = '2021, misken'
+project = 'ba'
+copyright = '2024, misken'
 author = 'misken'
 
 # The short X.Y version
@@ -106,7 +106,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'mis5460doc'
+htmlhelp_basename = 'badoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -133,7 +133,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'mis5460.tex', 'mis5460 Documentation',
+    (master_doc, 'ba.tex', 'ba courseweb',
      'misken', 'manual'),
 ]
 
@@ -143,7 +143,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mis5460', 'mis5460 Documentation',
+    (master_doc, 'ba', 'ba courseweb',
      [author], 1)
 ]
 
@@ -154,8 +154,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'mis5460', 'mis5460 Documentation',
-     author, 'mis5460', 'One line description of project.',
+    (master_doc, 'ba', 'ba courseweb',
+     author, 'ba', 'One line description of project.',
      'Miscellaneous'),
 ]
 

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Dashboards &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Excel VBA and Application Dev’t" href="vba_appdev.html" />
+    <link rel="prev" title="Multidimensional data exploration and visualization" href="md_pivot.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="vba_appdev.html" title="Excel VBA and Application Dev’t"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="md_pivot.html" title="Multidimensional data exploration and visualization"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" >Foundation for spreadsheet analytics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="data_wrangling_eda.html" accesskey="U">Data wrangling and visualization</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Dashboards</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="dashboards">
+<h1>Dashboards<a class="headerlink" href="#dashboards" title="Link to this heading">¶</a></h1>
+<p>Now that we’ve learned about basic principles of graphical excellence and have
+added a bunch of advanced Excel data visualizaton techniques to our toolbox, let’s put those
+together to create information rich dashboards.</p>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>While the term “dashboard” can mean many things, there are some common design principles
+to create effective dashboards. And, while there are numerous specialized dashboard building tools, we can do some pretty good dashboards in Excel. There are several advanced Excel techniques that
+facilitate building effective and maintainable dashboards. As I’ve probably already said
+multiple times, Excel may not be the best tool for certain things, but it’s often the second
+best tool for many things. Dashboard building is no exception. The techniques we’ll learn
+will also prove generally useful for other analytical Excel tasks.</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<p><strong>A Guide to Creating Dashboards People Love to Use</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>it is a white paper from <a class="reference external" href="http://www.juiceanalytics.com/">Juice Analytics</a></p></li>
+<li><p>available in Downloads for this session</p></li>
+<li><p>you can download a poster based on the white paper at at their <a class="reference external" href="http://www.juiceanalytics.com/white-papers-guides-and-more/">White papers, Guides and More</a> page. You can find a number of other very relevant white papers at that page as well (and I stuck the poster in the Downloads too).</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1B2BwCC5P4XhK-gRKrJjZ3OyglK4TMcHz/view?usp=sharing">Downloads_Dashboards.zip</a></p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/X4Xn4RBfgjs">SCREENCAST - Intro to dashboards</a> (11:01)</p></li>
+</ul>
+<section id="dashboard-design-concepts">
+<h3>Dashboard design concepts<a class="headerlink" href="#dashboard-design-concepts" title="Link to this heading">¶</a></h3>
+<p>Start by reading the white paper by Juice Analytics: <strong>Guide_to_Dashboard_Design.pdf</strong>.
+A poster summary is in: <strong>JuiceDashboardPoster.pdf</strong>. This white paper is a distillation
+of dashboarding concepts and best practices from different sources including
+Stephen Few, author of “Information Dashboard Design: The effective communication of data”.</p>
+<p>An outline of the white paper is:</p>
+<section id="part-1-foundation">
+<h4>Part 1: Foundation<a class="headerlink" href="#part-1-foundation" title="Link to this heading">¶</a></h4>
+<p><strong>Start with a Strong Foundation</strong></p>
+<p>Part 1 of our guide should help you map where you are going before you start throwing
+charts on a page.</p>
+<ul class="simple">
+<li><p>How is the dashboard going to add value to my organization?</p></li>
+<li><p>What type of dashboard am I creating?</p></li>
+<li><p>Who is the audience of the dashboard and what are their needs?</p></li>
+<li><p>What is the central thought-line of my dashboard story?</p></li>
+<li><p>What are the key metrics that will focus users on actionable information?</p></li>
+</ul>
+</section>
+<section id="part-2-structure">
+<h4>Part 2: Structure<a class="headerlink" href="#part-2-structure" title="Link to this heading">¶</a></h4>
+<p><strong>Add Meaning through Structure</strong></p>
+<p>Part 2 of our guide gives you the building blocks for constructing your dashboard. Like
+constructing a house, we wanted to focus on framing the structure before worrying about
+painting the walls and installing the kitchen appliances.</p>
+<ul class="simple">
+<li><p>Form: In what format is the dashboard delivered?</p></li>
+<li><p>Structure: How is the dashboard laid out to help users understand the big picture?</p></li>
+<li><p>Design principles: What are the fundamental objectives that will guide your design decisions?</p></li>
+<li><p>Functionality: What capabilities will the dashboard include to help users understand and interact with the information?</p></li>
+</ul>
+</section>
+<section id="part-3-information-design">
+<h4>Part 3: Information Design<a class="headerlink" href="#part-3-information-design" title="Link to this heading">¶</a></h4>
+<p><strong>Finish with Precise Presentation</strong></p>
+<p>Part 3 of our guide has been about giving you practical advice for laying out your
+dashboard and presenting the information in charts and tables.</p>
+<ul class="simple">
+<li><p>How to organize the dashboard page for a clean, stylish layout</p></li>
+<li><p>Choosing and using colors to your advantage</p></li>
+<li><p>A simple font framework for attractive text</p></li>
+<li><p>Picking the right chart for your data</p></li>
+<li><p>Designing easy to understand charts</p></li>
+<li><p>Tips for advanced visualizations and functionality</p></li>
+</ul>
+</section>
+</section>
+<section id="excel-techniques-for-dashboarding">
+<h3>Excel techniques for dashboarding<a class="headerlink" href="#excel-techniques-for-dashboarding" title="Link to this heading">¶</a></h3>
+<p>There are numerous techniques that (some of which we’ve covered in class already)
+are useful when using Excel to construct dashboards. The chandoo.org website has
+a terrific collection of dashboard related tutorials, templates, and examples.</p>
+<p><a class="reference external" href="https://chandoo.org/wp/excel-dashboards/">https://chandoo.org/wp/excel-dashboards/</a></p>
+<p>I’ve chosen a few different ones and created annotated examples to help
+explain how they work.</p>
+<section id="some-techniques-for-displaying-kpis">
+<h4>Some techniques for displaying KPIs<a class="headerlink" href="#some-techniques-for-displaying-kpis" title="Link to this heading">¶</a></h4>
+<p>In the folder <code class="docutils literal notranslate"><span class="pre">\chandoo_kpi</span></code> you’ll find an overview document (in both html and
+Markdown format) as well as a series of six progressively more detailed spreadsheets.
+Use the overview to explore them in order. Let’s look at the final product.</p>
+</section>
+<section id="slicers">
+<h4>Slicers<a class="headerlink" href="#slicers" title="Link to this heading">¶</a></h4>
+<p>Slicers are useful for providing a simple way to filter pivot tables and other
+Excel constructs. In the <code class="docutils literal notranslate"><span class="pre">\chandoo_slicers</span></code> folder you’ll find an overview document
+and three Excel files demonstrating a range of slicer capabilities and techniques.</p>
+</section>
+<section id="call-center-dashboard">
+<h4>Call Center Dashboard<a class="headerlink" href="#call-center-dashboard" title="Link to this heading">¶</a></h4>
+<p>Finally, we’ll explore a call center dashboard that implements a number of useful
+Excel techniques.</p>
+<p><a class="reference external" href="https://chandoo.org/wp/design-customer-service-dashboard/">https://chandoo.org/wp/design-customer-service-dashboard/</a></p>
+<p>This tutorial walks through the entire design and construction process for a call center dashboard. It’s a four part series and is well worth going through. Many nice techniques used.</p>
+<p>In the <code class="docutils literal notranslate"><span class="pre">\chandoo_customer_service</span></code> folder you’ll find an
+overview document as well as the associated Excel file.</p>
+<p>In one of the tutorials, little red and green arrow symbols are displayed in a cell. Here’s a short video I made explaining the general strategy for using special symbols within formulas to get this effect.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/xIOEkaaC5cM">SCREENCAST: Putting special symbols into formulas</a> (4:37)</p></li>
+</ul>
+<p>In Part 4, a conditionally formatted bar (horizontal) chart is created that includes a vertical line series. This is tricky. Here’s a screencast that shows how to create this particular combo chart. The key is the Select Data item on the Chart Design ribbon lets you have greater control of how series are oriented than you get from simply trying to format the series by right-click | Change Chart Type for Series.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/6xwgsZZtY5o">SCREENCAST: Creating combo horizontal bar chart with vertical line XY scatter chart</a> (8:25)</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<section id="excel-wizardry-with-named-formulas-index-and-sumproduct">
+<h3>Excel wizardry with Named Formulas, INDEX() and SUMPRODUCT()<a class="headerlink" href="#excel-wizardry-with-named-formulas-index-and-sumproduct" title="Link to this heading">¶</a></h3>
+<p>Range names are really named formulas. For the spreadsheet files, download them and open in Excel (i.e. don’t use Google Sheets). If they open in Sheets, just use File | Download.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.google.com/spreadsheets/d/10_DailLI_apouxc_GnOf3l2SNI0Owzah/edit?usp=sharing&amp;ouid=108213286032058571069&amp;rtpof=true&amp;sd=true">Named formula concepts (xlsx file)</a></p></li>
+<li><p><a class="reference external" href="https://docs.google.com/spreadsheets/d/12nMz4vYo29olRyLD4FnZQTgO2PPP2Ajf/edit?usp=sharing&amp;ouid=108213286032058571069&amp;rtpof=true&amp;sd=true">Excel Lissajous Curve Explorer (xlsx file)</a></p></li>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1g4yeH_eweGavD2TOWQTQc27ySNqQiTRD/view?usp=sharing">PowerFunctionViewer-NAF.xlsm</a> - Excel graphing with no data ranges</p></li>
+<li><p><a class="reference external" href="https://docs.google.com/spreadsheets/d/1SOlZ_buc6zaLqSOcw1_TkSJG8uiv3CbN/edit?usp=sharing&amp;ouid=108213286032058571069&amp;rtpof=true&amp;sd=true">ImposingIndex.xlsx</a></p></li>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1GsWc_EBHpoGCnYUvZ3GCglfT_HpLSkEJ/view?usp=sharing">SumproductMagic.zip</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Dashboards</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#activities">Activities</a><ul>
+<li><a class="reference internal" href="#dashboard-design-concepts">Dashboard design concepts</a><ul>
+<li><a class="reference internal" href="#part-1-foundation">Part 1: Foundation</a></li>
+<li><a class="reference internal" href="#part-2-structure">Part 2: Structure</a></li>
+<li><a class="reference internal" href="#part-3-information-design">Part 3: Information Design</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#excel-techniques-for-dashboarding">Excel techniques for dashboarding</a><ul>
+<li><a class="reference internal" href="#some-techniques-for-displaying-kpis">Some techniques for displaying KPIs</a></li>
+<li><a class="reference internal" href="#slicers">Slicers</a></li>
+<li><a class="reference internal" href="#call-center-dashboard">Call Center Dashboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#excel-wizardry-with-named-formulas-index-and-sumproduct">Excel wizardry with Named Formulas, INDEX() and SUMPRODUCT()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="md_pivot.html"
+                          title="previous chapter">Multidimensional data exploration and visualization</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="vba_appdev.html"
+                          title="next chapter">Excel VBA and Application Dev’t</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/dashboards.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="vba_appdev.html" title="Excel VBA and Application Dev’t"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="md_pivot.html" title="Multidimensional data exploration and visualization"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" >Foundation for spreadsheet analytics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="data_wrangling_eda.html" >Data wrangling and visualization</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Dashboards</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

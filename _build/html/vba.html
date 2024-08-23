@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Excel VBA &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Excel application development" href="appdev.html" />
+    <link rel="prev" title="Excel VBA and Application Dev’t" href="vba_appdev.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="appdev.html" title="Excel application development"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="vba_appdev.html" title="Excel VBA and Application Dev’t"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="vba_appdev.html" accesskey="U">Excel VBA and Application Dev’t</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Excel VBA</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="excel-vba">
+<h1>Excel VBA<a class="headerlink" href="#excel-vba" title="Link to this heading">¶</a></h1>
+<p>We will start with a three week crash course in Excel VBA (2 weeks) and spreadsheet application development (1 week).
+Make sure you have the VBA for Modelers textbook.</p>
+<p>A quote from Enterprise Data Analysis and Visualization: An Interview Study on the growing need for technically adept analysts:</p>
+<blockquote>
+<div><p>When discussing recruitment, one Chief Scientist said “analysts that can’t program are disenfranchised here”</p>
+</div></blockquote>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Link to this heading">¶</a></h2>
+<p>In this module you will learn the basics of Excel VBA programming. By the end of it, you should understand and/or be able to use/do the following:</p>
+<ul class="simple">
+<li><p>Understand the role of VBA in spreadsheet application development</p></li>
+<li><p>Use the VB Editor effectively</p></li>
+<li><p>Be able to create and modify basic programs using variables, conditional logic, loops, input boxes, message boxes, Excel objects (worksheets, ranges, etc.), and VB functions.</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>In this 2-week crash course we’ll be mostly drawing on material from Chapters 1-10 in VBA for Modelers.</p></li>
+<li><p>Chapter 5 (Getting started with VBA) is VERY IMPORTANT.</p></li>
+<li><p>Chapter 6 (Range object) is ALSO VERY IMPORTANT in terms of learning the most important object in Excel programming.</p></li>
+<li><p>Later in the term we’ll be using other chapters when we learn more advanced spreadsheet application development skills.</p></li>
+</ul>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1FMQ3KbCUfQ-qq32COvhccAS8iFZ91Mx3/view?usp=sharing">Downloads-Module05-VBA.zip</a></p></li>
+</ul>
+</section>
+<section id="screencasts-and-other-activities">
+<h2>Screencasts and other activities<a class="headerlink" href="#screencasts-and-other-activities" title="Link to this heading">¶</a></h2>
+<section id="excel-vba-1-intro-to-vba-programming">
+<h3>Excel VBA 1 - Intro to VBA programming<a class="headerlink" href="#excel-vba-1-intro-to-vba-programming" title="Link to this heading">¶</a></h3>
+<p>Read Chapters 1-3 in VBA for Modelers. In Section 3.5 of VBA for Modelers, follow along and do “A First Program” on pages 24-29 (page numbers may vary by edition). Name your file <code class="docutils literal notranslate"><span class="pre">First_Program-YourName.xlsm</span></code>. Depending on which edition of the VBA book you bought, use the appropriate file.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/1SvJz_jegt8">SCREENCAST: Intro to VBA</a> (24:07)</p></li>
+</ul>
+<p>Before we really get into programming, let’s do some Macro Recording to get a preview of VBA and the Excel Object model.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/p10k8zY_8Dc">SCREENCAST: Object model intro</a> (40:38)</p></li>
+</ul>
+<p>Now, let’s become familiar with the VB Editor and get some understanding of basic logic flow in computer programs.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/9sadwfHLImI">SCREENCAST: The VB Editor (VBE) and Program Flow Basics</a> (17:20)</p></li>
+</ul>
+<p>Ok, now let’s dive in and learn about variables, Dim statements, and some basic concepts regarding subroutine and function procedures. We’ll also learn basic debugging using stepping and the Immediate Window.</p>
+<p>Exercise 5.1 - Displaying a Message. You should try to do this now yourself. You can find the solution in the <code class="docutils literal notranslate"><span class="pre">\Exercise5_1and2</span></code> folder inside of the Downloads folder.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/2bIqk2YIG78">SCREENCAST: Variables and Procedures Basics</a> (39:03)</p></li>
+</ul>
+<p>And we will end this first session on VBA by learning about built in VBA functions via a little string parsing exercise.</p>
+<p>Exercise 5.2 - Displaying a Message. You should try to do this now yourself. You can find the solution in the <code class="docutils literal notranslate"><span class="pre">\Exercise5_1and2</span></code> folder inside of the Downloads folder.</p>
+<p>Next week we will dive into the Excel Object Model with a focus on Range Objects (Chapter 6).</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/DsmOVD81DmI">SCREENCAST: Intro to VBA Functions via String Parsing Fun</a> (52:56)</p></li>
+</ul>
+</section>
+<section id="excel-vba-2-the-excel-object-model">
+<h3>Excel VBA 2 - The Excel Object Model<a class="headerlink" href="#excel-vba-2-the-excel-object-model" title="Link to this heading">¶</a></h3>
+<p>Now that we’ve covered the very basics of programming, let’s take our first real dive into the Excel Object model.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/qvzMarYxvo8">SCREENCAST: Dive Into the Excel Object Model</a> (32:27)</p></li>
+</ul>
+<p>The first video ended with a challenge to solve Exercise 5.3. Let’s see how it’s done.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/qPOxIv_2eMo">SCREENCAST: Solving Exercise 5.3</a> (11:45)</p></li>
+</ul>
+<p>In this next video I’ll show how to do the extensions to Exercise 5.3 mentioned in the slides.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/XpbsSN2iubg">SCREENCAST: Extensions Exercise 5.3</a> (21:33)</p></li>
+</ul>
+<p>After Exercise 5.3, we see the need to learn about control logic - things like loops and if-then statements.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/9-w3QZa_xF8">SCREENCAST: If-Then and Looping</a> (18:40)</p></li>
+</ul>
+<p>Now we will revisit the First Program you did earlier and pick up a few more debugging techniques such as Watches and Breakpoints.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/uPQSk9eWfyQ">SCREENCAST: FirstProgram and More on Debugging Programs with the VBE</a> (20:03)</p></li>
+</ul>
+<p>We’ll use a simple averaging program to see loops and if-then in action.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/4QSfc25mIH0">SCREENCAST: The Averaging Program</a> (33:33)</p></li>
+</ul>
+<p>We’ll conclude this part of the VBA crash course with an in-depth look at the Range object.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/BRcegYUXtr4">SCREENCAST: The Mighty Range Object</a> (46:47)</p></li>
+</ul>
+<p>Several people have asked questions related to copying a range in a spreadsheet to other places within the workbook or into another workbook. So, I worked up a quick set of examples. Download and extract <a class="reference external" href="https://drive.google.com/file/d/1kd-_FPhTLdEjenf5nZQw1_1nabWWWqow/view?usp=sharing">range_copy.zip</a> and then open the <code class="docutils literal notranslate"><span class="pre">range_copy.xlsm</span></code> file and you’ll find buttons on the first sheet that are associated with different examples. The code is heavily commented.</p>
+</section>
+<section id="putting-it-all-together-the-break-even-problem">
+<h3>Putting it all together - the Break Even problem<a class="headerlink" href="#putting-it-all-together-the-break-even-problem" title="Link to this heading">¶</a></h3>
+<p>Now, let’s put it all together with a little exercise in which we’ll use VBA to mimic the functionality of a one-way data table. I’ve broken this up into four short screencasts. There’s also links below to the files uses in this exercise. I HIGHLY recommend that you work through this before attempting the VBA homework as it will give you a chance to make sure you understand how to use basic range referencing, looping, and conditional logic to accomplish a typical Excel task. All the files you’ll need are in the <code class="docutils literal notranslate"><span class="pre">\BreakEven</span></code> subfolder of the Downloads file.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/znSr3BcinGE">SCREENCAST: The Break Even Problem</a> (5:45)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/WtTnkngW9yA">SCREENCAST: Filling the MyProfit range</a> (11:24)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/UC4AhB6Qa_Q">SCREENCAST: Automated Goal Seek for break even volume levels</a> (10:17)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/dXcoLpALNDI">SCREENCAST: Detecting the break even point (goes beyond the Basic Solution)</a> (14:04)</p></li>
+</ul>
+</section>
+</section>
+<section id="explore">
+<h2>Explore<a class="headerlink" href="#explore" title="Link to this heading">¶</a></h2>
+<p>Learn about Grace Hopper, a true software pioneer. You’ll also find out where the programming term <em>bug</em> came from.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://fivethirtyeight.com/features/the-queen-of-code/">The Queen of Code</a></p></li>
+</ul>
+<p>Nice example of how VBA can be used to generate custom spreadsheets for non-technical end-users.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.jstor.org/stable/pdf/20141564.pdf">Disseminating Emergency Preparedness Planning Models as Automatically Generated Custom Spreadsheets</a></p></li>
+</ul>
+<p>Good example of using VBA to encapsulate complex, model specific, formulas in UDF’s (user defined functions)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.jstor.org/stable/pdf/20141562.pdf">Spreadsheet Models for Inventory Target Setting at Procter &amp; Gamble</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Excel VBA</a><ul>
+<li><a class="reference internal" href="#objectives">Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#screencasts-and-other-activities">Screencasts and other activities</a><ul>
+<li><a class="reference internal" href="#excel-vba-1-intro-to-vba-programming">Excel VBA 1 - Intro to VBA programming</a></li>
+<li><a class="reference internal" href="#excel-vba-2-the-excel-object-model">Excel VBA 2 - The Excel Object Model</a></li>
+<li><a class="reference internal" href="#putting-it-all-together-the-break-even-problem">Putting it all together - the Break Even problem</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore">Explore</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="vba_appdev.html"
+                          title="previous chapter">Excel VBA and Application Dev’t</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="appdev.html"
+                          title="next chapter">Excel application development</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/vba.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="appdev.html" title="Excel application development"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="vba_appdev.html" title="Excel VBA and Application Dev’t"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="vba_appdev.html" >Excel VBA and Application Dev’t</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Excel VBA</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

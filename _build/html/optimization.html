@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Optimization modeling &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Intro to modeling uncertainty" href="uncertainty.html" />
+    <link rel="prev" title="Advanced modeling techniques" href="adv_modeling.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="uncertainty.html" title="Intro to modeling uncertainty"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="adv_modeling.html" title="Advanced modeling techniques"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="adv_modeling.html" accesskey="U">Advanced modeling techniques</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Optimization modeling</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="optimization-modeling">
+<h1>Optimization modeling<a class="headerlink" href="#optimization-modeling" title="Link to this heading">¶</a></h1>
+<p>This is an introduction to optimization using Excel Solver. We’ll see examples of linear, non-linear and integer optimization problems. These beasts pop up in all kinds of business problems. They are fun to do because we get to make Excel and Solver do the hard work of coming up with the answers (once we formulate a good model).</p>
+<p>I hope to give you a glimpse into the amazing breadth and power of optimization modeling and solver tools available to business analysts. Optimization models are lurking under the hood of many common business applications. In fact, while data mining and “predictive analytics” is all the rage, when you look into the details you find statistics, simulation, and optimization.</p>
+<p>If you want to learn more about optimization modeling, consider taking QMM 4400 (Management Science) in the SBA within the friendly confines of Excel.
+If you want to learn more about the math of optimization, there are a number of courses offered in the Math/Stat department such as MOR 3330 (Engineering Operations Research), MOR 4554 (Linear and Integer Optimization) and MOR 4555 (Nonlinear Optimization).</p>
+<p>If you want to see a real example of the power of optimization in one of Michigan’s
+largest companies, here’s a video describing General Motors <a class="reference external" href="https://www.youtube.com/watch?v=R2MBYlFx_LQ">Vehicle Content Optimization</a> tool. GMs work was honored by being named a finalist in the prestigious Edelman Award
+in 2022 for high impact analytics work.</p>
+<section id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Link to this heading">¶</a></h2>
+<p>We are starting in on optimization modeling this week. The focus in our class will be on learning how to model certain kinds of problems as optimization problems, translate them to Excel, and solve them using Solver. Due to time constraints, we will not go deeply at all into the underlying mathematical theories related to optimization (though they are fascinating and well worth some study) but I will try to convey the basic ideas behind the three main algorithms in the Excel Solver:</p>
+<ul class="simple">
+<li><p>The Simplex Method for linear programs</p></li>
+<li><p>The GRG Nonlinear method for non-linear problems</p></li>
+<li><p>The Evolutionary algorithm for general optimization problems</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<p>From our Business Analytics text:</p>
+<ul class="simple">
+<li><p>Ch13 - this is the main intro to the general topic of optimization</p></li>
+<li><p>Section 14.8 - basic ideas behind nonlinear models</p></li>
+<li><p>Section 14.7 - basic ideas behind integer opt models</p></li>
+<li><p>Sections 14.1-14.3 and 14.5-14.6 - examples of linear programming problems</p></li>
+<li><p>Section 14.4 - examples of problems that can be modeled as networks</p></li>
+</ul>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1y2YMVP5_qhr8YtqyDismFuk-ROjRZOAp/view?usp=sharing">Downloads_Opimization.zip</a></p></li>
+</ul>
+<p>You can find the SolverTable add-in at <a class="reference external" href="https://kelley.iu.edu/albright/free_downloads.htm">Chris Albright’s Free Downloads</a> page.</p>
+</section>
+<section id="screencasts-and-other-activities">
+<h2>Screencasts and other activities<a class="headerlink" href="#screencasts-and-other-activities" title="Link to this heading">¶</a></h2>
+<section id="intro-to-optimization">
+<h3>Intro to Optimization<a class="headerlink" href="#intro-to-optimization" title="Link to this heading">¶</a></h3>
+<p>To start, let’s talk a little about optimization…</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/n3LetCSL8OY">SCREENCAST: Intro to optimization</a> (16:25)</p></li>
+</ul>
+<p>Now, let’s revisit the Golf Clubs Pricing problem from the perspective of non-linear optimization…</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/KNrUJ6dEn28">SCREENCAST: Golf clubs pricing via optimization</a> (23;07)</p></li>
+</ul>
+<p>Time to tell you scary Solver stories…</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/0--3tak_0KI">SCREENCAST: The nasty function</a> (17:42)</p></li>
+</ul>
+<p>Ok, let’s start to learn to build Excel optimization models. This problem is Example 13.1 in the
+BA textbook Also, see the PPT slides available in Moodle for lots of details.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/GvGc2VbOOe8">SCREENCAST: A product mix optimization problem</a> (27:15)</p></li>
+</ul>
+<p>We can use the free SolverTable add-in created by Chris Albright to do some
+sensitivity analysis on our Product Mix problem.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/LRxAho_mxR4">SCREENCAST: Installing and using SolverTable to do sensitivity analysis</a> (8:41)</p></li>
+</ul>
+<p>Now, I want you to try to build a model of your own. In the PPT slides you’ll find one about the “IRS Supercomputer” problem. The problem is <a class="reference external" href="https://drive.google.com/file/d/1MY4vdPUS5_KuRJUutTgIEGm1WNlMqIuH/view?usp=sharing">number 88 in this pdf</a> (which is also available in the Downloads file). Try this problem. Here’s the screencast that walks you through it.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/Vr5JbhRObxg">SCREENCAST: IRS Supercomputer Problem</a> (34:22)</p></li>
+</ul>
+</section>
+<section id="problems-with-integer-variables">
+<h3>Problems with integer variables<a class="headerlink" href="#problems-with-integer-variables" title="Link to this heading">¶</a></h3>
+<p>As discussed in the slides and in the textbook, constraining some decision variables
+to only take on integer (or binary) values:</p>
+<ul class="simple">
+<li><p>is extremely common when modeling real business problems</p></li>
+<li><p>can make the problems MUCH more difficult to solve,</p></li>
+<li><p>but, Solver includes several algorithms that can often optimally solve (or at least find really good solutions)</p></li>
+</ul>
+<section id="an-automated-shift-scheduling-model">
+<h4>An automated shift scheduling model<a class="headerlink" href="#an-automated-shift-scheduling-model" title="Link to this heading">¶</a></h4>
+<p>For our first example with integer variables, let’s take a look at a shift scheduling model that I’ve embedded in a VBA driven decision support tool.
+We’ll see how a little VBA can make your models easy to use. The decision
+variables are the number of employees assigned to various shifts and we
+want the solution to use only integer numbers of employees.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/8KSC3N3_0TA">SCREENCAST: Shift Scheduling Model Based Decision Support Tool</a> (20:38)</p></li>
+</ul>
+</section>
+<section id="an-investment-modeling-challenge">
+<h4>An investment modeling challenge<a class="headerlink" href="#an-investment-modeling-challenge" title="Link to this heading">¶</a></h4>
+<p>This is a nice little challenge showing the power of binary variables for optimization modeling. Binary variables can only take on the values 0 or 1,
+and thus get used in problems in which some type of yes/no decision is
+being modeled. In this example, we’ll use binary variables to represent
+a set of investment decisions where for each investment we are allowed to
+either invest (1) or not invest (0). You’ll see that I challenge you to
+add various constraints to model certain business logic - pause the video
+and try it yourself before seeing the answer.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/RdEkycO06j8">SCREENCAST: Investment modeling challenge</a> (29:57)</p></li>
+</ul>
+</section>
+<section id="an-airline-hub-location-model">
+<h4>An airline hub location model<a class="headerlink" href="#an-airline-hub-location-model" title="Link to this heading">¶</a></h4>
+<p>Another use of binary variables is in facility location problems. This
+next example is based on Example 14.10 in our BA textbook.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/u5NoGcYfSS4">SCREENCAST: Airline hub location problem</a> (20:30)</p></li>
+</ul>
+</section>
+<section id="what-if-your-model-is-too-big-for-free-version-of-solver">
+<h4>What if your model is too big for free version of Solver?<a class="headerlink" href="#what-if-your-model-is-too-big-for-free-version-of-solver" title="Link to this heading">¶</a></h4>
+<p>There are many good free and open source optimization solvers out there. A research group in New Zealand has taken it upon themselves to create an Excel add-in called <a class="reference external" href="https://opensolver.org/">OpenSolver</a> that can use one of these free solvers or other high quality commericial solvers that a company may own. It’s easy to install and use and includes the high quality <a class="reference external" href="https://github.com/coin-or/Cbc">cbc solver</a> with it. If you are using optimization in your project, you might want to check it out OpenSolver.</p>
+</section>
+</section>
+<section id="a-peek-under-the-hood-optional">
+<h3>A peek under the hood (OPTIONAL)<a class="headerlink" href="#a-peek-under-the-hood-optional" title="Link to this heading">¶</a></h3>
+<p>Let’s see a little on how these optimization algorithms work.</p>
+<p>This is what the feasible region to a linear program (in 3 variables) looks like. It’s called a polyhedron.</p>
+<img alt="_images/polyhedron1.jpg" src="_images/polyhedron1.jpg" />
+<p>The optimal solution will lie either at a corner or on a segment connecting two corners (in which case all the points on that segment are optimal).</p>
+<p>The Overview of LP screencast talks about some of the key properties that make an optimization problem linear (and easy to solve). It’s based on a few of the slides as well as some web based <a class="reference external" href="https://www.optimization101.org/2020/12/welcome.html">animations for visualizing how the simplex method (used by Solver) works</a> to find the optimal solution to an LP. Note that in the screencast I was able to use older Java applet versions of the animations. The link above contains video versions as the original applets don’t work anymore (they used Flash).</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/tFO8NoyAFTQ">SCREENCAST: How does linear programming work?</a> (17:15)</p></li>
+</ul>
+<p>The Graphical Solution screencast shows how you can confirm that Solver’s solution is optimal by graphing the feasible region and a few isoprofit lines. Creating the graphs is a little tricky and that’s why I created this video.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/vm9bc-bhL6w">SCREENCAST: Graphical solution of 2D LP</a> (23:48)</p></li>
+</ul>
+<p>Let’s learn a little history behind linear programming and how we got to today’s modern and unbelievably powerful solvers. I’ll show you an open source solver called GLPK and an algebraic modeling language called AMPL (with open source clone GMPL) so that you can see how optimization problems are formulated and solved outside the realm of spreadsheets.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/GvhCU0qSXCY">SCREENCAST: Before and Beyond Solver</a> (29:41)</p></li>
+</ul>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pubsonline.informs.org/doi/abs/10.1287/inte.1070.0337">Spreadsheet Model Helps to Assign Medical Residents</a></p></li>
+<li><p><a class="reference external" href="http://www.wired.com/2010/01/slime-mold-grows-network-just-like-tokyo-rail-system/">Slime molds can design railway networks?!</a></p></li>
+</ul>
+<section id="more-traveling-salesperson-wizardry-from-r-studio-and-xkcd">
+<h3>More traveling salesperson wizardry from R Studio and xkcd<a class="headerlink" href="#more-traveling-salesperson-wizardry-from-r-studio-and-xkcd" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://gallery.shinyapps.io/shiny-salesman/">R Shiny based traveling salesperson app</a></p></li>
+<li><p><a class="reference external" href="https://xkcd.com/399/">xkcd on the Traveling Salesman problem</a></p></li>
+</ul>
+<p>xkcd is the ultimate nerd comic. It’s so nerdy that the xkcd community created <a class="reference external" href="http://www.explainxkcd.com/wiki/index.php/399:_Travelling_Salesman_Problem">this site to explain each xkcd comic is painstaking detail</a>. There is much to be learned from this site.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://xkcd.com/1906/">xkcd on spreadsheets</a></p></li>
+<li><p>… and then in very next installment, <a class="reference external" href="https://xkcd.com/1908/">xkcd on optimization!</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Optimization modeling</a><ul>
+<li><a class="reference internal" href="#objectives">Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#screencasts-and-other-activities">Screencasts and other activities</a><ul>
+<li><a class="reference internal" href="#intro-to-optimization">Intro to Optimization</a></li>
+<li><a class="reference internal" href="#problems-with-integer-variables">Problems with integer variables</a><ul>
+<li><a class="reference internal" href="#an-automated-shift-scheduling-model">An automated shift scheduling model</a></li>
+<li><a class="reference internal" href="#an-investment-modeling-challenge">An investment modeling challenge</a></li>
+<li><a class="reference internal" href="#an-airline-hub-location-model">An airline hub location model</a></li>
+<li><a class="reference internal" href="#what-if-your-model-is-too-big-for-free-version-of-solver">What if your model is too big for free version of Solver?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#a-peek-under-the-hood-optional">A peek under the hood (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#more-traveling-salesperson-wizardry-from-r-studio-and-xkcd">More traveling salesperson wizardry from R Studio and xkcd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="adv_modeling.html"
+                          title="previous chapter">Advanced modeling techniques</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="uncertainty.html"
+                          title="next chapter">Intro to modeling uncertainty</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/optimization.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="uncertainty.html" title="Intro to modeling uncertainty"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="adv_modeling.html" title="Advanced modeling techniques"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="adv_modeling.html" >Advanced modeling techniques</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Optimization modeling</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Multidimensional data exploration and visualization &#8212; ba 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dashboards" href="dashboards.html" />
+    <link rel="prev" title="Intro to data visualization" href="data_viz.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dashboards.html" title="Dashboards"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="data_viz.html" title="Intro to data visualization"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" >Foundation for spreadsheet analytics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="data_wrangling_eda.html" accesskey="U">Data wrangling and visualization</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Multidimensional data exploration and visualization</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="multidimensional-data-exploration-and-visualization">
+<h1>Multidimensional data exploration and visualization<a class="headerlink" href="#multidimensional-data-exploration-and-visualization" title="Link to this heading">¶</a></h1>
+<p>Pivot Tables are an extraordinarily useful and powerful way of exploring business data, especially when we have data consisting of both measures (e.g. sales volume, delivery time, speed to answer in a call center) and dimensions (e.g. time, region, customer, supplier, product). Our BA textbook provides a brief introduction to Pivot Tables in Section 17.2. However, I’m going to provide a much more comprehensive and advanced tutorial on this topic. You can feel free to go as deeply into this as you’d like but I think that mastering pivot tables and pivot type analysis in general is a critical business analytics skill.</p>
+<p>Pivot tables are based on a way of structuring data called multi-dimensional (MD) data modeling. For those of you with some database background, this MD approach differed in some profound ways from the entity relational (ER) database model. The MD approach grew out of the data warehousing movement, which in turn, grew out of the desire to analyze the wealth of data in transaction processing systems (using something gentler than high level programming languages for even SQL - Structured Query Language). Now, I know that many of you do not have much background in relational databases, SQL and data warehousing. However, some of you do.</p>
+<p>So, what I do in my class is introduce a bit on MD modeling and then do a hands-on tutorial on pivot tables. That leads us to an exciting new tool called Tableau which takes pivoting to a whole new level. If during the screencasts on MD modeling and the pivot table tutorial, I make reference to previous screencasts on data warehousing, ER modeling or SQL, just ignore them if you wish. However, at the bottom of this lesson, I’ve included a set of screencasts that do cover the basic of relational databases, SQL and data warehousing for those who are interested. They aren’t needed for doing basic pivot analysis but I think that anyone desiring to be a business analytics focused pro must have a solid understanding of these database topics.</p>
+<p>If you are interested, I’ve also included a bunch of <strong>optional</strong> material on basic relational database concepts and basic data querying with MS Access. Effective use of databases and knowledge of queries (including SQL) has been identified as a key skill needed by data analytics professionals. Included are some data warehousing 101 items - why data warehouses, how are data warehouses structured and how data warehouses fit into the business analytics food chain. I know that some of you (especially the MSITM students) have had course that covers databases, SQL, and data warehousing, but many of you have not. So, if you want to learn, dive in.</p>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Business Analytics: Section 3.5 - Pivot tables</p></li>
+<li><p>Business Analytics: Chapter 4 - BI Tools for Data Analysis (7ed) (or Section 17.2 - Data Exploration and Visualization (5/6ed))</p></li>
+<li><p><a class="reference external" href="https://benn.substack.com/p/is-bi-dead">Is BI dead?</a></p></li>
+<li><p><a class="reference external" href="https://benn.substack.com/p/datas-horizontal-pivot">Data’s horizontal pivot</a></p></li>
+</ul>
+<p>After learning VBA, Chapter 15 - Working with Pivot Tables and Tables, in our VBA for Modelers text shows how you can programmatically create and manipulate Pivot Tables.</p>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1aLPfoC6348XBRpyNz9wGNnPOn6OWQlQc/view?usp=sharing">Downloads-DataWarehousingPivot.zip</a></p></li>
+</ul>
+</section>
+<section id="screencasts-and-other-activities">
+<h2>Screencasts and other activities<a class="headerlink" href="#screencasts-and-other-activities" title="Link to this heading">¶</a></h2>
+<p>We’ll start with an intro to some data warehousing and multidimensional data modeling concepts.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/h9wI9Z-hQRI">SCREENCAST: Intro to Excel Tables</a> (13:37)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/xcX4AAaclUk">SCREENCAST: Intro to basic data warehousing concepts</a> (8:37)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/ATxqBhuGdGc">SCREENCAST: Intro to multi-dimensional data modeling concepts</a> (8:42)</p></li>
+</ul>
+<p>Within the Downloads folder you’ll find the tutorial, CallCenterPivot.docx, that
+is associated with the following screencast. It will be an intro to basic and
+intermediate Pivot Table use.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/O9pzqM191lo">SCREENCAST: Call Center Pivot Tutorial</a> (36:11)</p></li>
+</ul>
+<p>In the next two sections, I give an overview of Tableau and Excel’s newish
+Power Pivot tool. Microsoft has also gone directly at Tableau with its
+Power BI Desktop tool (also discussed below). It is well worth your time
+to become familiar with these tools as they are changing the way people
+do “pivoting” style analysis. They are relatively simple to learn but
+have a ton of power under the hood. Power Pivot and Get &amp; Transform start
+to blur the lines between databases, data prep tools and data visualization
+tools.</p>
+<section id="introduction-to-tableau">
+<h3>Introduction to Tableau<a class="headerlink" href="#introduction-to-tableau" title="Link to this heading">¶</a></h3>
+<p>I mentioned that we were going to be using a relatively new piece of software called <a class="reference external" href="http://www.tableausoftware.com/">Tableau</a>. It takes pivot tables to a whole new level. While the software is installed in our lab, we also have an agreement with Tableau that allows you to download and install Tableau on your own computer. It is super cool stuff. See the link in the Textbook and Software section on the main page of our Moodle site.</p>
+<p>I’ve create a short getting started screencast and there are numerous other resources listed below.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/ImQctMqWwNQ">SCREENCAST: Introduction to Tableau</a> (22:24)</p></li>
+</ul>
+<p>More resources:</p>
+<ul class="simple">
+<li><p>A collection of Tableau tutorials is available in the DownloadsTableau folder. They have names that start “Tutorial 1”, “Tutorial 2”, and “Tutorial 3”. The first covers the basics while the second and third cover more advanced topics including calculated measures and dimensions as well as using Tableau’s mapping features (ala GIS type analyses).</p></li>
+<li><p>As an alternative to downloading Tableau, you can learn it by using <a class="reference external" href="http://www.tableausoftware.com/public/">Tableau Public</a> - a hosted version.</p></li>
+<li><p><a class="reference external" href="https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htm">Tutorial: Getting Started with Tableau Desktop</a> - good place to start learning Tableau</p></li>
+<li><p><a class="reference external" href="https://community.tableau.com/s/students">Tableau Student Resource Center</a></p></li>
+<li><p><a class="reference external" href="http://www.tableau.com/learn/starter-kit">Tableau Desktop Starter Kit</a> - a guide with tutorials and videos to get you going in Tableau</p></li>
+<li><p>Here’s a bunch of <a class="reference external" href="http://www.tableausoftware.com/learn/whitepapers">“whitepapers” from Tableau</a></p></li>
+</ul>
+<p>Perhaps you’ll find Tableau useful for the data visualization assignment or some aspect of your final project.</p>
+</section>
+<section id="introduction-to-microsoft-power-pivot-and-power-bi-desktop">
+<h3>Introduction to Microsoft Power Pivot and Power BI Desktop<a class="headerlink" href="#introduction-to-microsoft-power-pivot-and-power-bi-desktop" title="Link to this heading">¶</a></h3>
+<p>Since Excel 2010, Microsoft has been adding more powerful data acquisition, cleaning, data modeling and analysis tools to its familiar spreadsheet.</p>
+<section id="power-pivot-and-get-transform">
+<h4>Power Pivot and Get &amp; Transform<a class="headerlink" href="#power-pivot-and-get-transform" title="Link to this heading">¶</a></h4>
+<p><a class="reference external" href="https://support.office.com/en-us/article/power-pivot-powerful-data-analysis-and-data-modeling-in-excel-a9c2c6e2-cc49-4976-a7d7-40896795d045">Power Pivot (formerly PowerPivot)</a> is a relatively new addition to the Pivot Table ecosystem. It’s available as a free add-in to Excel 2010 and in 2013 was integrated into Excel as a COM add-in. In Excel 2016 it became available through the Data tab and was fully integrated into Excel. Essentially, it helps Excel analysts to:</p>
+<ul class="simple">
+<li><p>create a “multidimensional data model” by linking to and/or importing multiple data sources</p></li>
+<li><p>provides autodetect features for building relationships (joins) between these data sources</p></li>
+<li><p>build Pivot Tables on top of this new “data model”</p></li>
+<li><p>enhance your Pivot Tables with Slicers (a new to 2010 feature adding visual filtering to Pivot Tables)</p></li>
+<li><p>publish results as nice looking dashboards either within Excel or via Sharepoint</p></li>
+</ul>
+<p>Check out the link above for some good introductory videos and general information. In addition, Power Pivot is covered in Section 17-2 of our Business Analytics textbook. If you’d like to explore Power Pivot in more detail, consider taking it on as your class project. For example, you could create a set of materials to help people learn to use Power Pivot (nothing like creating teaching materials to force you to really learn something).</p>
+<p>There are some strange shortcomings of PowerPivot in that it makes certain Pivot Table functionality, specifically Grouping, unusable if the Pivot Table is based on what is known an <em>OLAP-based data source</em>. This <a class="reference external" href="https://contexturesblog.com/archives/2018/01/18/problem-grouping-pivot-table-items/">Contextures blog post</a> does a nice job of explaining the issue and a workaround.</p>
+<p>I decided to create a quick intro to Power Pivot based on some bike share data from Seattle. It covers the basics of:</p>
+<ul class="simple">
+<li><p>using Get &amp; Transform to import several data tables - station, trip, and weather</p></li>
+<li><p>adding those tables to the Data Model</p></li>
+<li><p>building a relationship between the station and trip table</p></li>
+<li><p>adding a second copy of the station table to handle need for multiple joins between station and trip</p></li>
+<li><p>computing a trip date field in the trip table using DAX formula</p></li>
+<li><p>joining trip to the weather table using trip date</p></li>
+<li><p>specifying that the weather table will serve as the “date table”</p></li>
+<li><p>creating a Pivot Table in Excel to count trips out of each station over time</p></li>
+<li><p>computing a station group field for both copies of the station table</p></li>
+<li><p>creating a Pivot Table to compute average trip duration for trips between all the station groups</p></li>
+</ul>
+<p>Obviously, there’s so much more that could be done including analyzing how weather impacts
+ride volume and ride length. Also, since latitude and longitude are in the station tables, you
+could use the Power Map capability to generate, for example, maps with bubbles whose size is
+proportional to ride volume.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/XTp9hR5Y2Uo">SCREENCAST: Getting started with Power Pivot using bike share data</a> (23:32)</p></li>
+</ul>
+<p>The Get &amp; Transform tool (also available in Excel’s Data tab) used to be called PowerQuery. We saw this
+tool earlier in the course when we used it for getting data into Excel from text files and for
+doing data reshaping (the unpivoting example).</p>
+<p>Here is link to a <a class="reference external" href="https://support.microsoft.com/en-us/office/get-transform-and-power-pivot-in-excel-42d895c2-d1d7-41d0-88da-d1ed7ecc102d">nice set of videos and other learning resources for Get &amp; Transform and Power Pivot</a>.</p>
+</section>
+<section id="power-bi-desktop">
+<h4>Power BI Desktop<a class="headerlink" href="#power-bi-desktop" title="Link to this heading">¶</a></h4>
+<p>And even more recently, MS released a free version of Power BI Desktop that is Tableau-ish. Here’s a link to a whole set of learning materials for this tool.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://powerbi.microsoft.com/en-us/guided-learning/">https://powerbi.microsoft.com/en-us/guided-learning/</a></p></li>
+</ul>
+<p>A nice <a class="reference external" href="http://www.cio.com/article/2979725/enterprise-software/why-power-bi-is-the-future-of-excel.html">article summarizing the direction of Excel and its companion Power BI offerings</a> appeared in CIO magazine back in Sept of 2015.</p>
+<p>With respect to R and MS’s acquisition of Revolution Analytics a few years ago, it’s not clear how this is going to play out.</p>
+</section>
+</section>
+<section id="overview-of-relational-databases-sql-data-warehousing-optional">
+<h3>Overview of relational databases, SQL, data warehousing (OPTIONAL)<a class="headerlink" href="#overview-of-relational-databases-sql-data-warehousing-optional" title="Link to this heading">¶</a></h3>
+<p>For those of you interested in getting a basic understanding of relational databases, SQL and data warehousing, here is a set of screencasts I did as well as some additional resources. BTW, knowledge of relational databases, SQL and data warehousing is pretty important for any business analytics person.</p>
+<p>Chapter 14 - Importing Data into Excel from a Database, in our VBA for Modelers text, has a very nice introduction to relational database concepts.</p>
+<p><a class="reference external" href="http://www.juiceanalytics.com/writing/databases-are-rocks-spreadsheets-are-water/">Databases are Rocks, Spreadsheets are Water</a> - this is my favorite essay on the relationship between databases and spreadsheets.</p>
+<section id="screencasts-and-downloads">
+<h4>Screencasts and Downloads<a class="headerlink" href="#screencasts-and-downloads" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>Screencast - <a class="reference external" href="https://youtu.be/EiLF8ZT0rbA">The Excel Database “D” Functions</a></p></li>
+<li><p>Screencast - <a class="reference external" href="https://youtu.be/K70j9lq8Zwc">Relational DBs: Tables, Records, Fields</a></p></li>
+<li><p>Screencast - <a class="reference external" href="https://youtu.be/WB9TeMhVo68">Relational DBs: Keys and Relationships</a></p></li>
+<li><p>Screencast - <a class="reference external" href="https://youtu.be/TqnQ4jERbvY">Relational DBs: Intro to SQL</a></p></li>
+<li><p>Screencast - <a class="reference external" href="https://youtu.be/7shc1foHlDI">Relational DBs: SQL Aggregate Queries for Analysis</a></p></li>
+</ul>
+<p><a class="reference external" href="https://drive.google.com/file/d/1XFvU81z9wJLu5ZKYXhKSTIqbgtdERGL0/view?usp=sharing">Downloads-RelationalDBsSQLandADO.zip</a></p>
+<p>Here is a series of screencasts by David Langer covering everything from the basics up to more advanced topics with a focus on the things that are useful for business analytics.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/playlist?list=PLTJTBoU5HOCSrExoOVTjDG33lFpDvmz2w">Introduction to SQL Programming for Excel Users</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<section id="data-analytics-at-kellogg-s">
+<h3>Data analytics at Kellogg’s<a class="headerlink" href="#data-analytics-at-kellogg-s" title="Link to this heading">¶</a></h3>
+<p>A few years ago, I attended a terrific talk by Nolen Akerman of Kellogg’s describing their journey to analytics. He’s shared a few links that we can share with students including some Tableau Public visualizations he’s done as well as a YouTube video of their “immersive analytics room”. Very cool.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://public.tableau.com/profile/nolen.akerman#!/">Public Tableau visualizations</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=XM6lOyRYYHI">Immersive room video</a></p></li>
+</ul>
+</section>
+<section id="open-source-alternatives-to-tableau-power-bi">
+<h3>Open source alternatives to Tableau / Power BI<a class="headerlink" href="#open-source-alternatives-to-tableau-power-bi" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="http://idl.cs.washington.edu/projects/lyra/">Lyra: An interactive visualization design environment</a></p></li>
+<li><p>Learn R or Python and use tools like <a class="reference external" href="https://ggplot2.tidyverse.org/">ggplot2</a>, <a class="reference external" href="https://shiny.rstudio.com/">shiny</a>, <a class="reference external" href="https://plotly.com/">plotly</a>, <a class="reference external" href="https://matplotlib.org/">matplotlib</a>, <a class="reference external" href="https://seaborn.pydata.org/">seaborn</a>, <a class="reference external" href="https://holoviz.org/">holoviz</a>, <a class="reference external" href="https://www.altair.com/data-analytics/">altair</a>, or <a class="reference external" href="https://streamlit.io/">streamlit</a>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Multidimensional data exploration and visualization</a><ul>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#screencasts-and-other-activities">Screencasts and other activities</a><ul>
+<li><a class="reference internal" href="#introduction-to-tableau">Introduction to Tableau</a></li>
+<li><a class="reference internal" href="#introduction-to-microsoft-power-pivot-and-power-bi-desktop">Introduction to Microsoft Power Pivot and Power BI Desktop</a><ul>
+<li><a class="reference internal" href="#power-pivot-and-get-transform">Power Pivot and Get &amp; Transform</a></li>
+<li><a class="reference internal" href="#power-bi-desktop">Power BI Desktop</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#overview-of-relational-databases-sql-data-warehousing-optional">Overview of relational databases, SQL, data warehousing (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#screencasts-and-downloads">Screencasts and Downloads</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#data-analytics-at-kellogg-s">Data analytics at Kellogg’s</a></li>
+<li><a class="reference internal" href="#open-source-alternatives-to-tableau-power-bi">Open source alternatives to Tableau / Power BI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="data_viz.html"
+                          title="previous chapter">Intro to data visualization</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="dashboards.html"
+                          title="next chapter">Dashboards</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/md_pivot.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dashboards.html" title="Dashboards"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="data_viz.html" title="Intro to data visualization"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ba 1.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="foundation.html" >Foundation for spreadsheet analytics</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="data_wrangling_eda.html" >Data wrangling and visualization</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Multidimensional data exploration and visualization</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>
