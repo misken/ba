@@ -123,9 +123,6 @@ And even more recently, MS released a free version of Power BI Desktop that is T
 
 * https://powerbi.microsoft.com/en-us/guided-learning/
 
-A nice `article summarizing the direction of Excel and its companion Power BI offerings <http://www.cio.com/article/2979725/enterprise-software/why-power-bi-is-the-future-of-excel.html>`_ appeared in CIO magazine back in Sept of 2015.
-
-With respect to R and MS's acquisition of Revolution Analytics a few years ago, it's not clear how this is going to play out.
 
 Overview of relational databases, SQL, data warehousing (OPTIONAL)
 ------------------------------------------------------------------
@@ -167,7 +164,8 @@ A few years ago, I attended a terrific talk by Nolen Akerman of Kellogg's descri
 Open source alternatives to Tableau / Power BI
 ----------------------------------------------
 
-* `Lyra: An interactive visualization design environment <http://idl.cs.washington.edu/projects/lyra/>`_
+* `Apache Superset <https://superset.apache.org/>`_
+* `Metabase <https://www.metabase.com/>`_ has a free and open source tier (Docker based)
 * Learn R or Python and use tools like `ggplot2 <https://ggplot2.tidyverse.org/>`_, `shiny <https://shiny.rstudio.com/>`_, `plotly <https://plotly.com/>`_, `matplotlib <https://matplotlib.org/>`_, `seaborn <https://seaborn.pydata.org/>`_, `holoviz <https://holoviz.org/>`_, `altair <https://www.altair.com/data-analytics/>`_, or `streamlit <https://streamlit.io/>`_.
 
 
