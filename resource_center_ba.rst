@@ -30,6 +30,24 @@ Excel modeling and analysis
 * `Albright, Winston Textbooks`_ - I'm a longtime user of several of these guys textbooks. This page contains numerous files related to their books. Great stuff - also check out the `Free Downloads page <https://host.kelley.iu.edu/albrightbooks/Free_downloads.htm>`_. 
 * `ModelOff`_ - Financial modeling world championships. Must see to believe. But..., things have changed. Even though this link now leads to a commercial set of learning resources, I'm leaving it here because it's an interesting statement on the evolution of modeling in the finance world. You can find some of the `classic ModelOff competitions on YouTube <https://www.youtube.com/results?search_query=modeloff+financial+modeling+world+championships>`_.
 
+Publicly available data
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* `DrivenData Competitions <https://www.drivendata.org/competitions/>`_ - not suggesting you compete (you can) but these are a great source of high quality datasets. You'll need to create a free account to be able to download data. I used this site as a motivation for my series of blog posts on `algal bloom detection from satellite imagery <https://bitsofanalytics.org/posts/algaebloom-part1/>`_.
+* `Kaggle Datasets <https://www.kaggle.com/datasets>`_ - need to create a free Kaggle account
+* `Data is Plural <https://www.data-is-plural.com/>`_ - links to many interesting datasets
+* `Data.gov <https://data.gov/>`_ - US government data
+* `Census.gov <https://www.census.gov/>`_ - US census data
+* `Bureau of Transportation Statistics <https://www.transtats.bts.gov/Homepage.asp>`_ - tons of transportation rel
+* `OpenML Datasets <https://www.openml.org/search?type=data&sort=runs&status=active>`_ - site with many ML resources
+* `UCI Machine Learning Repository <https://archive.ics.uci.edu/ml/datasets.html>`_
+* `cs109 Resources (2014) <http://cs109.github.io/2014/pages/resources.html>`_ - Many links to datasets (as well as links to Python and misc data science stuff)
+* `https://github.com/rstudio/RStartHere#data <https://github.com/rstudio/RStartHere#data>`_ - From the RStartHere site
+* `Google Public Data <https://www.google.com/publicdata/directory>`_
+* `Climate Data Online <http://www.ncdc.noaa.gov/cdo-web/>`_
+* `USGS <https://www.usgs.gov/>`_
+* `dataportals.org <http://dataportals.org/>`_
+* `Finding Data on the Internet (from Inside-R) <http://www.inside-r.org/howto/finding-data-internet>`_
 
 Communities
 ^^^^^^^^^^^^^
