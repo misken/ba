@@ -70,5 +70,6 @@ Explore (OPTIONAL)
 * What do analysts actually do day to day? `Enterprise Data Analysis and Visualization: An Interview Study <http://web.cse.ohio-state.edu/~machiraju.1/teaching/CSE5544/Visweek2012/vast/papers/kandel.pdf>`_
 * `FlowingData <https://flowingdata.com/>`_
 * `The classic TED talk by Hans Rosling <https://www.youtube.com/watch?v=RUwS1uAdUcI>`_ - the world meets animated bubble charts
+* `A Tableau story from the World Happiness Report <https://worldhappiness.report/ed/2024/happiness-of-the-younger-the-older-and-those-in-between/>`_ - see Figure 2.1
 
 
