@@ -48,6 +48,7 @@ Publicly available data
 * `USGS <https://www.usgs.gov/>`_
 * `dataportals.org <http://dataportals.org/>`_
 * `Finding Data on the Internet (from Inside-R) <http://www.inside-r.org/howto/finding-data-internet>`_
+* `Modern plain text computing <https://mptc.io/content/>`_ - this course has a list of practice data sources on the main page (check out tidy Tuesday)
 
 Communities
 ^^^^^^^^^^^^^
