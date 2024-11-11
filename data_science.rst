@@ -27,7 +27,7 @@ So, in this module I hope to:
   - Read "The Signal and the Noise" by Nate Silver.
 
 
-We certainly will not have time to cover all of the stuff below during class time. However, you can revisit the stuff we don't get to after the term. If you want to learn more about this topic, consider taking MIS 4560/5560 - Intro to Data Science or my `MIS 4470/5470 - Practical Computing for Data Analytics <http://www.sba.oakland.edu/faculty/isken/courses/pcda/>`_ (uses Linux, R, and Python) course. In the 4560/5560 course, you'll use JMP or SAS or other tools like RapidMiner which implements many commonly used data mining techniques. 
+We certainly will not have time to cover all of the stuff below during class time. However, you can revisit the stuff we don't get to after the term. If you want to learn more about this topic, consider taking MIS 4560/5560 - Intro to Data Science or my `MIS 4470/5470 - Practical Computing for Data Analytics <https://pcda.misken.org/>`_ (uses Linux, R, and Python) course. In the 4560/5560 course, you'll use JMP or SAS or other tools like RapidMiner which implements many commonly used data mining techniques. 
 
 Readings
 ========
@@ -47,7 +47,7 @@ Downloads
 
 If interested, here is the courseweb page for the first night of class in MIS 4470/5470 - Practical Computing for Data Analytics. You'll find screencasts that cover everything we do that first class and get a really good feel for a totally different way of doing analytics work.
 
-* `Intro to Practical Computing for Data Analytics (MIS 4470/5470) <http://www.sba.oakland.edu/faculty/isken/courses/pcda/kickoff.html>`_
+* `Intro to Practical Computing for Data Analytics (MIS 4470/5470) <https://pcda.misken.org/kickoff.html>`_
 
 Activities
 ===================================
