@@ -23,7 +23,7 @@ We will see how powerful the Excel INDEX function can be in this module. A great
 Downloads
 =========
 
-* `Downloads-Module04-DataOrg-MiscPowerExcel.zip <https://drive.google.com/file/d/1uDVCY92n-4epOXq_Kn2vS7jCeyxUMx5y/view?usp=sharing>`_
+* `Downloads-Module04-DataOrg-MiscPowerExcel.zip <https://drive.google.com/file/d/1ELjk4NpFlPNEhPnochjk0CGhtWLawigb/view?usp=sharing>`_
 
 
 Screencasts and other activities
