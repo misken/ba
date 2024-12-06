@@ -63,9 +63,7 @@ Now let's get the big picture on analytics and this class.
 
 * `Screencast: Analytics and this class <https://youtu.be/OCCk6InQaN4>`_ (15:24) 
 
-I already covered a bunch of things related to course logistics and the course websites in the Course Welcome video and in the Week 1 Welcome video. I'm NOT going to repeat these things here. There are just a few more course and syllabus details I want to mention now. Note that the video below is from Fall 2023 but the content has not changed.
-
-* `Screencast: Course logistics, syllabus, course websites <https://youtu.be/ugUVMdI_dRI>`_ (5:35)
+I already covered a bunch of things related to course logistics and the course websites in the Course Welcome video, in the Week 1 Welcome video and in the Announcements. Make sure you read through the syllabus - especially take a look at the grading section and the info on late days.
 
 Now it's time for a little modeling challenge. After opening the SchedulingDSS.xlsm
 file, make sure you allow the macros to run. Usually you'll get a little yellow warning
