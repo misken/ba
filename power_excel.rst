@@ -39,15 +39,13 @@ Next, get an introduction to creating and using worksheet controls to start to b
 
 Let's get our first real look at the mysterious world of Excel array functions and formulas.
 
-* `SCREENCAST: Intro to Arrays, Array Functions, and Array Formulas (17:08) <https://youtu.be/i5ymAM7XViI>`_
+* `SCREENCAST: Intro to Arrays, Array Functions, and Array Formulas (11:41) <https://youtu.be/24Olk4hYKDs>`_
 
 Now that you know the basics of array formulas, let's start to see how to use them to do some pretty magical stuff in Excel. Within the Powerpoint slides for this module (found in the Downloads zip file), you'll find reference to a few more power techniques. Check out the slide on dynamic range names. We'll revisit this soon when we talk about the general topic of "named array formulas" (NAF). I've included a slide and associated file on NAFs for those curious types who want to start exploring them right away.
 
-* `SCREENCAST: Array Formula Magic (36:13) <https://youtu.be/IsLd6sSg_jY>`_
+* `SCREENCAST: Array Formula Magic (33:34) <https://youtu.be/3KsITFvNPx8>`_
 
-I realized that Excel's Evaluate Formula tool provides a nice way of visualizing how array functions work. So, here's a very short vid that demonstrates the idea.
 
-* `SCREENCAST: Using Evaluate Formula Tool to Learn About Array Formulas (6:14) <https://youtu.be/LqWvpXiZmbI>`_
 
 Explore
 =======
