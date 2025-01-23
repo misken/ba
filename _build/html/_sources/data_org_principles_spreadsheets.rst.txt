@@ -36,7 +36,7 @@ good tips to be found here.
 Downloads
 =========
 
-`Downloads-Module04-DataOrg-MiscPowerExcel.zip <https://drive.google.com/file/d/1uDVCY92n-4epOXq_Kn2vS7jCeyxUMx5y/view?usp=sharing>`_
+`Downloads-Module04-DataOrg-MiscPowerExcel.zip <https://drive.google.com/file/d/10EzPZRwj4KDxqjeL_S3uMO2DMMwohdCz/view?usp=drive_link>`_
 
 Activities
 ===========

@@ -92,7 +92,7 @@ This section will typically have links related to the topic, ... or not. Have fu
 
 Check out my collection of links about the field of business analytics. This is from the Resource Center section of this courseweb.
 
-* `Resource Center <http://www.sba.oakland.edu/faculty/isken/courses/ba/resource_center_ba.html#general-business-analytics>`_
+* `Resource Center <https://ba.misken.org/resource_center_ba#general-business-analytics>`_
 
 This is why the Yahoo Finance automated web query for historical stock price data will no longer work. Time for a new solution. Sounds like a good project.
 
