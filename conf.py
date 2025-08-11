@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ba'
-copyright = '2024, misken'
+copyright = '2025, misken'
 author = 'misken'
 
 # The short X.Y version
