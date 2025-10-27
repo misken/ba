@@ -43,7 +43,7 @@ classic Text Import Wizard, you can do that through **File | Options | Data** an
 Since you'll be doing some text importing in one of the activities below, I put together a 
 quick screencast to demo the new wizard.
 
-* `Screencast: Using the new text import wizard (and getting the old one back) <https://youtu.be/hFIahSC_xW4>`_ (4:07)
+* `Screencast: Using the new text import wizard (and getting the old one back) <https://youtu.be/hFIahSC_xW4>`_ (4:07, `transcript <https://drive.google.com/file/d/1pfQhHpasC2deWuCLEe-oAFejxgEFWDAF/view?usp=sharing>`_)
 
 Screencasts and other activities
 ================================
@@ -51,7 +51,7 @@ Screencasts and other activities
 
 Okay, let's go. Start by watching the following video. I'll be using the PPT slides from the Downloads file to structure my introduction to this class and I suggest you download them and have them open while watching the video as many of the slides have hyperlinks to web sites we'll be exploring.
 
-* `Screencast: BA Kickoff <https://youtu.be/Rzf2iuj9yQE>`_ (2:10) 
+* `Screencast: BA Kickoff <https://youtu.be/Rzf2iuj9yQE>`_ (2:10, , `transcript <https://drive.google.com/file/d/11tE-rhfLirLi6J9UDLOOct_miJxRPGNb/view?usp=sharing>`_) 
 
 As you are watching the videos in this module, there will be times that you will be pointed towards additional videos for hands-on excercises using Excel. The Excel files needed for these exercises are in the Downloads file. The work you do based on these "Exercise Vids" is NOT graded and you will NOT submit any files. These are the kinds of activities that we'd normally do in class together in the computer lab.
 
