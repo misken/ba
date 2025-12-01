@@ -57,11 +57,11 @@ As you are watching the videos in this module, there will be times that you will
 
 Time for the first hands-on challenge! 
 
-* `Screencast: Exercise 1 - Data analysis challenge <https://youtu.be/1Kpd_e7Wa0g>`_ (46:29)
+* `Screencast: Exercise 1 - Data analysis challenge <https://youtu.be/1Kpd_e7Wa0g>`_ (46:29, `transcript <https://drive.google.com/file/d/1LkH7FgxylauZK4RcpwJCFMVAxKotcUtI/view?usp=sharing>`_)
 
 Now let's get the big picture on analytics and this class.
 
-* `Screencast: Analytics and this class <https://youtu.be/OCCk6InQaN4>`_ (15:24) 
+* `Screencast: Analytics and this class <https://youtu.be/OCCk6InQaN4>`_ (15:24, `transcript <https://drive.google.com/file/d/1BAbopt_8pnVj0x-w8O5PRXg-ICavOm5h/view?usp=sharing>`_) 
 
 I already covered a bunch of things related to course logistics and the course websites in the Course Welcome video, in the Week 1 Welcome video and in the Announcements. Make sure you read through the syllabus - especially take a look at the grading section and the info on late days.
 
@@ -70,11 +70,11 @@ file, make sure you allow the macros to run. Usually you'll get a little yellow 
 just below the ribbon and a button labeled "Enable content" (or similar) that you can
 click to allow the macros to run.
 
-* `Screencast: Exercise 2 - Scheduling model challenge <https://youtu.be/2CWgPadbV4Y>`_ (36:36)
+* `Screencast: Exercise 2 - Scheduling model challenge <https://youtu.be/2CWgPadbV4Y>`_ (36:36, `transcript <https://drive.google.com/file/d/1EZBTcGwHeLtIR8UeA-qQQ4mW9Qo24JYW/view?usp=sharing>`_)
 
 Let's get a bit of an historical perspective on the field of business analytics.
 
-* `Screencast: Historical look at analytics <https://youtu.be/BiTlH55krJc>`_ (8:51) 
+* `Screencast: Historical look at analytics <https://youtu.be/BiTlH55krJc>`_ (8:51, `transcript <https://drive.google.com/file/d/1L6xBVizHUv5wwigaIXFAfBDC_PXtsqQI/view?usp=sharing>`_) 
 
 And for our last challenge, let's look at a simple simulation model of a project management problem.
 
