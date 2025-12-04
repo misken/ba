@@ -51,13 +51,20 @@ Screencasts and other activities
 
 Okay, let's go. Start by watching the following video. I'll be using the PPT slides from the Downloads file to structure my introduction to this class and I suggest you download them and have them open while watching the video as many of the slides have hyperlinks to web sites we'll be exploring.
 
-* `Screencast: BA Kickoff <https://youtu.be/Rzf2iuj9yQE>`_ (2:10, , `transcript <https://drive.google.com/file/d/11tE-rhfLirLi6J9UDLOOct_miJxRPGNb/view?usp=sharing>`_) 
+* `Screencast: BA Kickoff <https://youtu.be/Rzf2iuj9yQE>`_ (2:10, `transcript <https://drive.google.com/file/d/11tE-rhfLirLi6J9UDLOOct_miJxRPGNb/view?usp=sharing>`_) 
 
 As you are watching the videos in this module, there will be times that you will be pointed towards additional videos for hands-on excercises using Excel. The Excel files needed for these exercises are in the Downloads file. The work you do based on these "Exercise Vids" is NOT graded and you will NOT submit any files. These are the kinds of activities that we'd normally do in class together in the computer lab.
 
 Time for the first hands-on challenge! 
 
-* `Screencast: Exercise 1 - Data analysis challenge <https://youtu.be/1Kpd_e7Wa0g>`_ (46:29, `transcript <https://drive.google.com/file/d/1LkH7FgxylauZK4RcpwJCFMVAxKotcUtI/view?usp=sharing>`_)
+Data Analysis Challenge
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+* `Screencast: Data analysis challenge - Part 1: Ingesting data <https://youtu.be/4klQqpnDA8w>`_ (10:10, `transcript <https://drive.google.com/file/d/1hmQ4s5t8TbsGfgyoZ92iLGKPwGDFyosu/view?usp=sharing>`_)\
+
+* `Screencast: Data analysis challenge - Part 2: Counting visits <https://youtu.be/XONy6Fc0aV8>`_ (7:01, `transcript <https://drive.google.com/file/d/19fD1FyCaxAothtqIr8g6A4ATJfaBYvD4/view?usp=sharing>`_)
+
+* `Screencast: Data analysis challenge - Part 3: Dates and times <https://youtu.be/szVsug6QOMY>`_ (12:45, `transcript <https://drive.google.com/file/d/1xyZ2rYIPaEx_F-lLTr2cjK_ffony51zS/view?usp=sharing>`_)
 
 Now let's get the big picture on analytics and this class.
 
@@ -70,7 +77,7 @@ file, make sure you allow the macros to run. Usually you'll get a little yellow 
 just below the ribbon and a button labeled "Enable content" (or similar) that you can
 click to allow the macros to run.
 
-* `Screencast: Exercise 2 - Scheduling model challenge <https://youtu.be/2CWgPadbV4Y>`_ (36:36, `transcript <https://drive.google.com/file/d/1EZBTcGwHeLtIR8UeA-qQQ4mW9Qo24JYW/view?usp=sharing>`_)
+* `Screencast: Exercise 2 - Scheduling model challenge <https://youtu.be/PbWyiPDDTnM>`_ (20:38, `transcript <https://drive.google.com/file/d/1-59-FXewPOKYegg6gJeK7hki7uXzhdIs/view?usp=sharing>`_)
 
 Let's get a bit of an historical perspective on the field of business analytics.
 
@@ -78,7 +85,7 @@ Let's get a bit of an historical perspective on the field of business analytics.
 
 And for our last challenge, let's look at a simple simulation model of a project management problem.
 
-* `Screencast: Exercise 3 - Project management challenge <https://youtu.be/-psOK4PBIPA>`_ (12:38)
+* `Screencast: Exercise 3 - Project management challenge <https://youtu.be/-psOK4PBIPA>`_ (12:38, `transcript <https://drive.google.com/file/d/1X5h5ZS6BYmiIpzLN6kDW6ANitcULJX3j/view?usp=sharing>`_)
 
 Let's finish this session with a high level look at the role of analytics today and both educational and professional opportunities in this field. Check out the rest of the slides in this presentation and
 explore some of the links. They will provide a glimpse into

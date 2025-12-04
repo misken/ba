@@ -14,5 +14,11 @@ Foundation for spreadsheet analytics
    spreadsheet_based_modeling
    simple_math_models
    data_wrangling_eda
+   data_org_principles_spreadsheets
+   power_excel
+   data_cleaning
+   data_viz
+   md_pivot
+   dashboards
 
 * :ref:`search`
