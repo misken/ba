@@ -50,10 +50,6 @@ Now, let's revisit the Walton Bookstore problem using @Risk.
 
 * `SCREENCAST: Using RiskSimTable to Analyze Multiple Scenarios <https://youtu.be/gLxvqzX35lI>`_ (8:45)
 
-How do you go about figuring out what input distributions to use?
-
-* `SCREENCAST: Distribution fitting with @Risk <https://youtu.be/Q_eNicNLq7A>`_ (35:46)
-
 Hey, is there some way that we can combine the "what if?" power of simulation with the "what's best?" power of Solver? Yep, check out RiskOptimizer.
 
 * `SCREENCAST: Using RiskOptimizer to Optimize and Simulate <https://youtu.be/QBEI8u5MEnk>`_ (13:44)
@@ -61,6 +57,10 @@ Hey, is there some way that we can combine the "what if?" power of simulation wi
 What if my random input variables are correlated? (OPTIONAL)
 
 * `SCREENCAST: Modeling correlated inputs - a stock example <https://youtu.be/hatjoiKDMyY>`_ (12:42)
+
+How do you go about figuring out what input distributions to use?  (OPTIONAL)
+
+* `SCREENCAST: Distribution fitting with @Risk <https://youtu.be/Q_eNicNLq7A>`_ (35:46)
 
 Explore (OPTIONAL)
 ==================
