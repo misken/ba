@@ -100,7 +100,7 @@ Now that we have a pricing model, we can embed it a pricing optimization model. 
 * `SCREENCAST: Golf Clubs Pricing - Optimal Price (23:06) <https://youtu.be/QGHiw_PdrwQ>`_
 
 
-Uncertainty - The elephant in the room 
+Uncertainty - The elephant in the room [OPTIONAL]
 -----------------------------------------------------------
 
 What about uncertainty? We've dealt with it only via some rather rudimentary sensitivity analysis and curve fitting. This last screencast will discuss this issue a bit, demonstrate a real model from the healthcare world that directly deals with uncertainty, and closes with some concluding thoughts on the difficult craft that is quantitative and computer modeling. We will be revisiting the question of modeling uncertainty later in the semester.

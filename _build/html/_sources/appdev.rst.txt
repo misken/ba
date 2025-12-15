@@ -72,7 +72,7 @@ We'll end this module with a series on creating user forms in Excel so that you 
 * `SCREENCAST - User Forms: Adding Controls <https://youtu.be/_8tqoERWK7c>`_ (30:19)
 * `SCREENCAST - User Forms - Adding Code <https://youtu.be/RsEK2G_-MzI>`_ (33:48)
 
-A VBA driven scheduling optimization application
+A VBA driven scheduling optimization application (OPTIONAL)
 -----------------------------------------------------------
 
 A VBA driven, optimization based application

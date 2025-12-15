@@ -25,11 +25,14 @@ Software Overview
 Microsoft Excel
 ^^^^^^^^^^^^^^^
 
-We will use MS Excel 2016/2019/365 extensively in this course. The SBA computer labs all have Excel 2019. If you have either Excel 365, 2019 or 2016 on your personal computer, you should be fine. 
+We will use MS Excel 2016/2019/365 extensively in this course. The SBA computer labs all have Excel 2019. If you have either Excel 365, 2021, 2019 or 2016 on your personal computer, you should be fine. 
 
 **Important Note regarding Office for the Mac**: Unfortunately, MS has simply not made Excel for the Mac into the product it needs to be. There are add-ins we'll be using in this class as well as lots of VBA code that make it very difficult (and sometimes, impossible) for Mac versions of Excel to be used.
 
 Another option for accessing a Windows version of Excel is to use OU's Apporto Virtual Lab. See https://www.oakland.edu/uts/common-good-core-resources/virtual-labs/ for details. I also posted a screencast and additional links in Moodle regarding Apporto in the Additional Software Resources section.
+
+Yet another option for accessing a Windows version of Excel is to use the online version of O365 available for free to OU students. `This document <https://docs.google.com/document/d/1bfex-4NecqlPhDfhei7uQOshJeWAWaFjmIBAZHdP5IM/edit?usp=drive_link>`_ tells the students how to download and install but it also gets you to the office 365 online account. After that, students can go to office365.com, log in with their OU login and click the Apps button for the online apps which includes the copilot AI inside Excel, Word, PowerPoint, and others. 
+
 
 
 Textbook files
