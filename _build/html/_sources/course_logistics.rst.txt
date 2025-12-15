@@ -25,7 +25,7 @@ Software Overview
 Microsoft Excel
 ^^^^^^^^^^^^^^^
 
-We will use MS Excel 2016/2019/365 extensively in this course. The SBA computer labs all have Excel 2019. If you have either Excel 365, 2021, 2019 or 2016 on your personal computer, you should be fine. 
+We will use MS Excel 2016/2019/2021/365 extensively in this course. The SBA computer labs all have Excel 2019. If you have either Excel 365, 2021, 2019 or 2016 on your personal computer, you should be fine. 
 
 **Important Note regarding Office for the Mac**: Unfortunately, MS has simply not made Excel for the Mac into the product it needs to be. There are add-ins we'll be using in this class as well as lots of VBA code that make it very difficult (and sometimes, impossible) for Mac versions of Excel to be used.
 
