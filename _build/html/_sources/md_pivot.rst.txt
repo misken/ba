@@ -41,6 +41,8 @@ intermediate Pivot Table use.
 
 * `SCREENCAST: Call Center Pivot Tutorial <https://youtu.be/O9pzqM191lo>`_ (36:11)
 
+### Intro to advanced pivoting tools (OPTIONAL)
+
 In the next two sections, I give an overview of Tableau and Excel's newish
 Power Pivot tool. Microsoft has also gone directly at Tableau with its
 Power BI Desktop tool (also discussed below). It is well worth your time
