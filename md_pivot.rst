@@ -63,9 +63,8 @@ I've create a short getting started screencast and there are numerous other reso
 
 More resources:
 
-* A collection of Tableau tutorials is available in the Downloads\Tableau folder. They have names that start "Tutorial 1", "Tutorial 2", and "Tutorial 3". The first covers the basics while the second and third cover more advanced topics including calculated measures and dimensions as well as using Tableau's mapping features (ala GIS type analyses).
-* As an alternative to downloading Tableau, you can learn it by using `Tableau Public <http://www.tableausoftware.com/public/>`_ - a hosted version.
 * `Tutorial: Getting Started with Tableau Desktop <https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htm>`_ - good place to start learning Tableau
+* As an alternative to downloading Tableau, you can learn it by using `Tableau Public <http://www.tableausoftware.com/public/>`_ - a hosted version.
 * `Tableau Student Resource Center <https://community.tableau.com/s/students>`_
 * `Tableau Desktop Starter Kit <http://www.tableau.com/learn/starter-kit>`_ - a guide with tutorials and videos to get you going in Tableau
 * Here's a bunch of `"whitepapers" from Tableau <http://www.tableausoftware.com/learn/whitepapers>`_
